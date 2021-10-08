@@ -1,0 +1,39 @@
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: .9em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .pointer:hover {
+        cursor: pointer;
+    }
+
+    .dark-hover:hover {
+        color: black;
+    }
+
+    .t-black {
+        color: #5c5c5c;
+    }
+
+    .vertical-line {
+        width: 1px;
+        height: 65%;
+        background: #d8d4d4;
+    }
+
+    .my-outline-btn:hover {
+        outline: 1px solid black;
+    }
+
+    .my-outline-btn:focus {
+        box-shadow: none;
+    }
+
+    .my-outline-btn:active {
+        outline: 1px solid #aaa;
+    }
