@@ -26,6 +26,31 @@
         background: #d8d4d4;
     }
 
+    .underline-hover {
+        border-bottom: 2px solid transparent;
+    }
+
+    .underline-hover:hover {
+        border-bottom: 2px solid black;
+        cursor: pointer;
+        color: black;
+    }
+
+    .my-search-hover {
+        transition: .3s;
+        background: #f0ecec;
+    }
+
+    .input-non-effect {
+        background: transparent;
+        border: 0px solid black;
+    }
+
+    .input-non-effect:focus {
+        background: transparent;
+        box-shadow: none;
+    }
+
     .my-outline-btn:hover {
         outline: 1px solid black;
     }

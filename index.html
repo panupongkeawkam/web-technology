@@ -15,13 +15,15 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid shadow-sm">
 
         <!-- เพจบาร์ด้านบนสุด -->
         <div class="row">
@@ -29,15 +31,20 @@
                 <a class="d-flex pointer text-dark" style="height: 100%;">
                     <img src="icon/unsplash-logo.svg" height="100%">
                     <div class="d-flex flex-column p-1 justify-content-center">
-                        <span style="line-height: 1.2em;"><b>Unsplash</b></span>
-                        <span style="line-height: 1.2em; font-size: .8em;" class="text-nowrap">Photos for
+                        <span style="line-height: 1.5em;"><b>Unsplash</b></span>
+                        <span style="line-height: 1.5em; font-size: .8em;" class="text-nowrap">Photos for
                             everyone</span>
                     </div>
                 </a>
-                <form class="form-inline mx-3" style="width: 100%;">
-                    <input class="form-control form-inline rounded-pill" type="search" placeholder="Search"
-                        aria-label="Search">
-                </form>
+                <div class="input-group border rounded-pill mx-3 my-search-hover" style="width: 100%;">
+                    <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                        <img src="icon/search.svg" height="60%">
+                    </span>
+                    <input class="form-control input-non-effect px-0" type="search" placeholder="Search" onfocus="setSearchBG('white')" onfocusout="setSearchBG('#f0ecec')">
+                    <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                        <img src="icon/scanner.svg" height="60%">
+                    </span>
+                </div>
                 <a class="nav-link t-black dark-hover" href="#">Brands</a>
                 <a class="nav-link t-black dark-hover text-nowrap" href="#">🏆 Unsplash Awards</a>
                 <div class="vertical-line mx-3"></div>
@@ -49,6 +56,23 @@
                 <a class="nav-link" href="#">
                     <img src="icon/list.svg">
                 </a>
+            </div>
+            <div class="row">
+                <div class="navbar navbar-expand pb-0">
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black" style="border-bottom: 2px solid black">Editorial</div>
+                    <div class="vertical-line"></div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
+                </div>
             </div>
         </div>
 
