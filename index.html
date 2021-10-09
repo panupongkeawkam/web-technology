@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautiful Free Images & Pictures | Unsplash</title>
-    <link rel="shortcut icon" href="icon/unsplash-logo.svg">
+    <link rel="shortcut icon" href="icon/unsplash-logo.svg"> <!-- icon ตรง tab browser -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -28,6 +28,8 @@
         <!-- เพจบาร์ด้านบนสุด -->
         <div class="row">
             <div class="navbar navbar-expand" style="height: 60px;">
+
+                <!-- ลิงค์หน้าหลักและโลโก้ unsplash -->
                 <a class="d-flex pointer text-dark" style="height: 100%;">
                     <img src="icon/unsplash-logo.svg" height="100%">
                     <div class="d-flex flex-column p-1 justify-content-center">
@@ -36,49 +38,108 @@
                             everyone</span>
                     </div>
                 </a>
-                <div class="input-group border rounded-pill mx-3 my-search-hover" style="width: 100%;">
+
+                <!-- ช่องการค้นหา -->
+                <div class="input-group rounded-pill mx-3 py-1 my-search-bar" style="width: 100%;">
                     <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
                         <img class="icon-thin" src="icon/search.svg" height="60%">
                     </span>
-                    <input class="form-control input-non-effect px-0" type="search" placeholder="Search"
-                        onfocus="setSearchBG('white')" onfocusout="setSearchBG('#f0ecec')">
+                    <input class="form-control input-non-effect px-0" type="search" placeholder="Search free high-resolution photos"
+                        onfocus="setSearchBGAndBorder('white', '#d7d7d7', 0)"
+                        onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 0)">
                     <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
                         <img class="icon-thin" src="icon/scanner.svg" height="60%">
                     </span>
                 </div>
-                <a class="nav-link t-black dark-hover" href="#">Brands</a>
-                <a class="nav-link t-black dark-hover text-nowrap" href="#">🏆 Unsplash Awards</a>
+
+                <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง (บางปุ่ม) -->
+                <a class="nav-link hyper-text-b" href="#">Brands</a>
+                <a class="nav-link hyper-text-b text-nowrap" href="#">🏆 Unsplash Awards</a>
                 <div class="vertical-line mx-3"></div>
-                <a class="nav-link t-black dark-hover text-nowrap" href="login/index.html">Log in</a>
-                <a class="nav-link t-black dark-hover text-nowrap px-0" href="#">
-                    <input class="btn border t-black my-outline-btn" style="font-size: .9em;" type="button"
+                <a class="nav-link hyper-text-b text-nowrap" href="login/index.html">Log in</a>
+                <a class="nav-link hyper-text-b text-nowrap px-0" href="#">
+                    <input class="btn border-secondary hyper-text-b my-outline-btn" style="font-size: .9em;" type="button"
                         value="Submit a photo">
                 </a>
-                <a class="nav-link" href="#">
+
+                <!-- เมนูบาร์ขวาสุด -->
+                <a class="nav-link icon-thin" href="#">
                     <img src="icon/list.svg">
                 </a>
             </div>
-            <div class="row">
-                <div class="navbar navbar-expand pb-0">
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black" style="border-bottom: 2px solid black">
-                        Editorial</div>
-                    <div class="vertical-line"></div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                    <div class="nav-link px-0 py-3 mx-3 underline-hover t-black">Editorial</div>
-                </div>
+        </div>
+
+        <!-- เพจบาร์ตรง category รูป -->
+        <div class="row">
+            <div class="navbar navbar-expand pb-0">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b"
+                    style="border-bottom: 2px solid black">
+                    Editorial</a>
+                <div class="vertical-line"></div>
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
             </div>
         </div>
 
     </div>
+
+    <div class="container-fluid picture-cover">
+
+        <div class="row">
+
+            <div class="row d-flex flex-column align-items-center py-5">
+                <div class="col-6 my-5 p-5">
+                    <h1 class="display-5 fw-bold text-light"><b>Unsplash</b></h1>
+                    <h6 class="text-light mt-4">The internet’s source of <a
+                            class="hyper-text-w text-decoration-underline">freely-usable
+                            images.</a></h6>
+                    <h6 class="text-light mb-4">Powered by creators everywhere.</h6>
+                    <div class="input-group rounded my-search-bar mb-3 py-2" style="width: 100%;">
+                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                            <img class="icon-thin" src="icon/search.svg" height="60%">
+                        </span>
+                        <input class="form-control input-non-effect px-0" type="search" placeholder="Search free high-resolution photos"
+                            onfocus="setSearchBGAndBorder('white', '#d7d7d7', 1)"
+                            onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 1)">
+                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                            <img class="icon-thin" src="icon/scanner.svg" height="60%">
+                        </span>
+                    </div>
+                    <p class="text-light">Trending: <a class="hyper-text-w">flower</a>, <a
+                            class="hyper-text-w">wall</a>, <a class="hyper-text-w">papers</a>, <a
+                            class="hyper-text-w">backgrounds</a>,
+                        <a class="hyper-text-w">happy</a>, <a class="hyper-text-w">love</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col d-flex p-3 mt-3 align-items-end justify-content-start"><a class="hyper-text-w">Photo of
+                        the
+                        Day </a><span style="color: #bbb">︎ by⁨︎ ︎</span><a class="hyper-text-w"> Shubham Dhage</a>
+                </div>
+                <div class="col d-flex p-3 mt-3 align-items-end justify-content-center"><span style="color: #bbb">Read
+                        more about the︎
+                        ⁨︎</span><a class="hyper-text-w">Unsplash License</a>
+                </div>
+                <div class="col d-flex p-3 mt-3 justify-content-end">
+                    <div class="row d-flex flex-column hyper-text-w">
+                        <img class="mb-2" src="icon/squarespace.svg" height="24px">
+                        <span>Create your website today.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 

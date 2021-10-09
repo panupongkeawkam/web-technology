@@ -12,12 +12,27 @@
         cursor: pointer;
     }
 
-    .dark-hover:hover {
+    .hyper-text-b {
         color: black;
+        opacity: .75;
+        /* color: #5c5c5c */
     }
 
-    .t-black {
-        color: #5c5c5c;
+    .hyper-text-b:hover {
+        color: black;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .hyper-text-w {
+        color: white;
+        opacity: .75;
+    }
+
+    .hyper-text-w:hover {
+        color: white;
+        opacity: 1;
+        cursor: pointer;
     }
 
     .vertical-line {
@@ -36,6 +51,13 @@
         color: black;
     }
 
+    .picture-cover {
+        background-image: url("image/main-page-cover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
     .icon-thin {
         opacity: .45;
     }
@@ -45,12 +67,14 @@
         cursor: pointer;
     }
 
-    .my-search-hover {
+    .my-search-bar {
         transition: .3s;
         background: #f0ecec;
+        border: 1px solid white;
     }
 
     .input-non-effect {
+        font-size: .96em;
         background: transparent;
         border: 0px solid black;
     }
@@ -61,13 +85,9 @@
     }
 
     .my-outline-btn:hover {
-        outline: 1px solid black;
+        border: 1px solid black;
     }
 
     .my-outline-btn:focus {
         box-shadow: none;
-    }
-
-    .my-outline-btn:active {
-        outline: 1px solid #aaa;
     }
