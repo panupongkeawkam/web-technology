@@ -36,6 +36,15 @@
         color: black;
     }
 
+    .icon-thin {
+        opacity: .45;
+    }
+
+    .icon-thin:hover {
+        opacity: .8;
+        cursor: pointer;
+    }
+
     .my-search-hover {
         transition: .3s;
         background: #f0ecec;
