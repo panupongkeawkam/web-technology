@@ -91,3 +91,17 @@
     .my-outline-btn:focus {
         box-shadow: none;
     }
+
+    .awards-cover {
+        opacity: 1;
+        background-image: url("icon/leaves.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;
+        background-color: black;
+    }
+
+    .awards-cover:hover {
+        opacity: .92;
+        cursor: pointer;
+    }
