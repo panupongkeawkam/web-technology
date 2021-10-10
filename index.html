@@ -30,7 +30,7 @@
             <div class="navbar navbar-expand" style="height: 60px;">
 
                 <!-- ลิงค์หน้าหลักและโลโก้ unsplash -->
-                <a class="d-flex pointer text-dark" style="height: 100%;">
+                <a href="index.html" class="d-flex pointer text-dark" style="height: 100%;">
                     <img src="icon/unsplash-logo.svg" height="100%">
                     <div class="d-flex flex-column p-1 justify-content-center">
                         <span style="line-height: 1.5em;"><b>Unsplash</b></span>
@@ -147,26 +147,69 @@
     <div class="container">
 
         <div class="row py-5 d-flex justify-content-center">
-            <div class="row d-flex flex-column text-center py-5 d-flex awards-cover" onclick="window.open('login/index.html', '_self')">
+            <div class="row d-flex flex-column text-center py-5 d-flex awards-cover"
+                onclick="window.open('login/index.html', '_self')">
                 <h2 class="fw-bold text-white">Unsplash Awards 2021</h2>
-                <h5 style="color: #bbb">Now accepting submissions to the 5<sup>th</sup> of the Unsplash Awards. <span><a class="text-decoration-underline" style="color: #bbb">Learn
+                <h5 style="color: #bbb">Now accepting submissions to the 5<sup>th</sup> of the Unsplash Awards. <span><a
+                            class="text-decoration-underline" style="color: #bbb">Learn
                             more</a></span></h5>
             </div>
         </div>
 
+        <!-- ทดสอบสร้าง gallery elements ของจริงต้องใช้ JS สร้าง (ยังไม่ได้ดัก responsive) -->
         <div class="row">
+
             <div class="col p-0">
-                <img src="image/main-page-cover.png" width="100%" class="pb-4">
+                <div class="row mb-4 mx-0 detail-hover position-relative">
+                    <img src="image/main-page-cover.png" width="100%" class="p-0">
+                    <div class="photo-overlay-1"></div>
+                    <div class="photo-overlay-2 p-3 justify-content-end">
+                        <button class="btn btn-light m-1 hyper-text-w">
+                            <img src="icon/heart.svg" width="16px">
+                        </button>
+                        <button class="btn btn-light m-1 hyper-text-w">
+                            <img src="icon/plus.svg" width="16px">
+                        </button>
+                    </div>
+                    <div class="photo-overlay-3 p-3 justify-content-between bottom-0">
+                        <div class="btn px-0 hyper-text-w">
+                            <img src="icon/pfp-for-test.png" height="32px" class="rounded-pill">
+                            <span class="text-white mx-2">John Judge</span>
+                        </div>
+                        <button class="btn btn-light m-1 hyper-text-w">
+                            <img src="icon/arrow-down.svg" width="16px">
+                        </button>
+                    </div>
+                </div>
             </div>
+
             <div class="col px-4">
-                <img src="image/main-page-cover.png" width="100%" class="pb-4">
-                <img src="image/main-page-cover.png" width="100%" class="pb-4">
+                <div class="row mb-4 mx-0 detail-hover position-relative">
+                    <img src="image/test.png" width="100%" class="p-0">
+                    <div class="photo-overlay-1"></div>
+                    <div class="photo-overlay-2 p-3 justify-content-end">
+                        <button class="btn btn-light m-1 hyper-text-w">
+                            <img src="icon/heart.svg" width="16px">
+                        </button>
+                        <button class="btn btn-light m-1 hyper-text-w">
+                            <img src="icon/plus.svg" width="16px">
+                        </button>
+                    </div>
+                    <div class="photo-overlay-3 p-3 justify-content-between bottom-0">
+                        <div class="btn px-0 hyper-text-w">
+                            <img src="icon/pfp-for-test.png" height="32px" class="rounded-pill">
+                            <span class="text-white mx-2">John Judge</span>
+                        </div>
+                        <button class="btn btn-light m-1 hyper-text-w">
+                            <img src="icon/arrow-down.svg" width="16px">
+                        </button>
+                    </div>
+                </div>
             </div>
+
             <div class="col p-0">
-                <img src="image/main-page-cover.png" width="100%" class="pb-4">
-                <img src="image/main-page-cover.png" width="100%" class="pb-4">
-                <img src="image/main-page-cover.png" width="100%" class="pb-4">
             </div>
+
         </div>
 
     </div>

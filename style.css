@@ -14,25 +14,31 @@
 
     .hyper-text-b {
         color: black;
-        opacity: .75;
-        /* color: #5c5c5c */
     }
 
     .hyper-text-b:hover {
         color: black;
-        opacity: 1;
-        cursor: pointer;
     }
 
     .hyper-text-w {
         color: white;
-        opacity: .75;
     }
 
     .hyper-text-w:hover {
         color: white;
+    }
+
+    .hyper-text-b, .hyper-text-w {
+        opacity: .8;
+    }
+
+    .hyper-text-b:hover, .hyper-text-w:hover {
         opacity: 1;
         cursor: pointer;
+    }
+
+    .hyper-text-b:focus, .hyper-text-w:focus {
+        box-shadow: none;
     }
 
     .vertical-line {
@@ -104,4 +110,51 @@
     .awards-cover:hover {
         opacity: .92;
         cursor: pointer;
+    }
+
+    .detail-hover:hover {
+        cursor: zoom-in;
+    }
+
+    .detail-hover:hover .photo-overlay-1 {
+        display: flex;
+    }
+
+    .detail-hover:hover .photo-overlay-2 {
+        display: flex;
+    }
+
+    .detail-hover:hover .photo-overlay-3 {
+        display: flex;
+    }
+
+    .photo-overlay-1 {
+        display: none;
+        position: absolute;
+        background: hsl(0, 50%, 0%, 20%);
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+    }
+
+    .photo-overlay-2 {
+        display: none;
+        position: absolute;
+        width: 100%;
+        transition: .3s;
+    }
+
+    .photo-overlay-3 {
+        display: none;
+        position: absolute;
+        width: 100%;
+        transition: .3s;
+    }
+
+    .photo-content {
+        background-image: url("image/test.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
     }
