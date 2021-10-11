@@ -30,7 +30,7 @@
             <div class="navbar navbar-expand" style="height: 60px;">
 
                 <!-- ลิงค์หน้าหลักและโลโก้ unsplash -->
-                <a href="index.html" class="d-flex pointer text-dark" style="height: 100%;">
+                <a href="" class="d-flex pointer text-dark" style="height: 100%;">
                     <img src="icon/unsplash-logo.svg" height="100%">
                     <div
                         class="d-flex flex-column p-xl-1 justify-content-center d-xl-flex d-lg-none d-md-none d-sm-none">
@@ -51,7 +51,7 @@
                         <input class="form-control input-non-effect px-0" type="search"
                             placeholder="Search free high-resolution photos"
                             onfocus="setSearchBGAndBorder('white', '#d7d7d7', 0)"
-                            onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 0)">
+                            onfocusout="setSearchBGAndBorder('#ececec', 'white', 0)">
                         <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
                             <img class="icon-thin" src="icon/scanner.svg" height="60%">
                         </span>
@@ -66,6 +66,7 @@
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <!-- แก้ text -->
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
@@ -82,6 +83,7 @@
                                 </button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                     <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                    <!-- แก้ text -->
                                 </button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                     <img src="icon/graph-up.svg" height="16px" class="me-2">logo
@@ -104,7 +106,7 @@
                                 </div>
                                 <div class="btn p-0 border rounded me-1 mb-1">
                                     <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
-                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
+                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span> <!-- แก้ text -->
                                 </div>
                                 <div class="btn p-0 border rounded me-1 mb-1">
                                     <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
@@ -122,6 +124,7 @@
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <!-- แก้ text -->
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
@@ -131,19 +134,89 @@
                 </div>
 
                 <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง (บางปุ่ม) -->
-                <a class="nav-link hyper-text-b" href="#">Brands</a>
-                <a class="nav-link hyper-text-b text-nowrap" href="#">🏆 Unsplash Awards</a>
+                <a class="nav-link hyper-text-b" href="#">Brands</a>🏆
+                <a class="nav-link hyper-text-b text-nowrap ps-2" href="#">Unsplash Awards</a>
                 <div class="vertical-line mx-3"></div>
-                <a class="nav-link hyper-text-b text-nowrap" href="login/index.html">Log in</a>
+                <a class="nav-link hyper-text-b text-nowrap" href="login/">Log in</a>
                 <a class="nav-link hyper-text-b text-nowrap px-0" href="#">
                     <input class="btn border-secondary hyper-text-b custom-outline-btn" type="button"
                         value="Submit a photo">
                 </a>
 
                 <!-- เมนูบาร์ขวาสุด -->
-                <a class="nav-link icon-thin" href="#">
+                <a class="nav-link icon-thin" href="#" id="listMenu" class="dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <img src="icon/list.svg">
                 </a>
+
+                <!-- dropdown ของเมนูบาร์ขวาสุด -->
+                <div class="dropdown-menu me-3 p-0 dropdown-animation" aria-labelledby="listMenu"
+                    style="right: 0; left: auto;">
+                    <div class="row p-4">
+                        <div class="col d-flex flex-row">
+                            <div class="col-4 pe-2">
+                                <img src="icon/company.svg">
+                            </div>
+                            <div class="col-8 pe-5">
+                                <span class="py-4" style="font-size: .9em;"><b>Company</b></span>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <!-- แก้ text -->
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-row px-5">
+                            <div class="col-4 pe-2">
+                                <img src="icon/product.svg">
+                            </div>
+                            <div class="col-8 pe-5">
+                                <span class="py-4" style="font-size: .9em;"><b>Product</b></span>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <!-- แก้ text -->
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-row">
+                            <div class="col-4 pe-2">
+                                <img src="icon/community.svg">
+                            </div>
+                            <div class="col-8 pe-5">
+                                <span class="py-4" style="font-size: .9em;"><b>Community</b></span>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <!-- แก้ text -->
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-4 py-3 border-top">
+                        <div class="col-8">
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a> <!-- แก้ text -->
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end">
+                            <img src="icon/twitter.svg" height="20px" class="icon-thin mx-2">
+                            <img src="icon/facebook.svg" height="20px" class="icon-thin mx-2">
+                            <img src="icon/instagram.svg" height="20px" class="icon-thin mx-2">
+                        </div>
+                    </div>
+                    <div class="dropdown-indent-shape"></div>
+                </div>
             </div>
         </div>
 
@@ -160,6 +233,7 @@
                 <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
                 <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
                 <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
+                <!-- แก้ text -->
                 <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
                 <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
                 <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a href="">
@@ -193,7 +267,7 @@
                             <input class="form-control input-non-effect px-0" type="search"
                                 placeholder="Search free high-resolution photos"
                                 onfocus="setSearchBGAndBorder('white', '#d7d7d7', 1)"
-                                onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 1)">
+                                onfocusout="setSearchBGAndBorder('#ececec', 'white', 1)">
                             <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
                                 <img class="icon-thin" src="icon/scanner.svg" height="60%">
                             </span>
@@ -208,6 +282,7 @@
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                    <!-- แก้ text -->
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
@@ -224,6 +299,7 @@
                                     </button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                         <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                        <!-- แก้ text -->
                                     </button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                         <img src="icon/graph-up.svg" height="16px" class="me-2">logo
@@ -246,6 +322,7 @@
                                     </div>
                                     <div class="btn p-0 border rounded me-1 mb-1">
                                         <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                        <!-- แก้ text -->
                                         <span class="btn px-3 py-1 mb-1 in-dropdown-btn">Logo</span>
                                     </div>
                                     <div class="btn p-0 border rounded me-1 mb-1">
@@ -265,6 +342,7 @@
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                    <!-- แก้ text -->
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
                                 </form>

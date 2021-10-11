@@ -22,6 +22,10 @@
         color: black;
     }
 
+    .hyper-text-b:focus{
+        color: black;
+    }
+
     .hyper-text-w {
         transition: .25s;
         color: white;
@@ -29,6 +33,10 @@
     }
 
     .hyper-text-w:hover {
+        color: white;
+    }
+
+    .hyper-text-w:focus{
         color: white;
     }
 
@@ -87,6 +95,23 @@
     .in-dropdown-btn:hover {
         background: #f4f4f4;
         color: hsl(0, 0%, 0%, 70%);
+    }
+
+    .dropdown-indent-shape {
+        width: 20px;
+        height: 20px;
+        background: white;
+        transform: rotateZ(45deg);
+        position: absolute;
+        right: 10px;
+        top: -11px;
+        border-top: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+    }
+
+    .dropdown-animation {
+        transform-origin: top right;
+        animation: scale-up .2s;
     }
 
     .input-non-effect {
@@ -164,4 +189,21 @@
         position: absolute;
         width: 100%;
         transition: .3s;
+    }
+
+    @keyframes scale-up {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        70% {
+            transform: scale(1.1, 1.2);
+            opacity: .7;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
