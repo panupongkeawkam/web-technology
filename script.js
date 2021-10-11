@@ -1,4 +1,4 @@
 function setSearchBGAndBorder(BGColour, borerColour, position) {
-    document.getElementsByClassName("my-search-bar")[position].style.background = BGColour;
-    document.getElementsByClassName("my-search-bar")[position].style.border = `1px solid ${borerColour}`;
+    document.getElementsByClassName("search-box-container")[position].style.background = BGColour;
+    document.getElementsByClassName("search-box-container")[position].style.border = `1px solid ${borerColour}`;
 }
