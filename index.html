@@ -393,9 +393,9 @@
         <!-- ทดสอบสร้าง gallery elements ของจริงต้องใช้ JS สร้าง (ยังไม่ได้ดัก responsive) -->
         <div class="row">
             <div class="col p-0">
-                <div class="row mb-4 mx-0 detail-hover position-relative" onclick="openDetail(0)">
+                <div class="row mb-4 mx-0 detail-hover position-relative">
                     <img src="image/main-page-cover.png" width="100%" class="p-0">
-                    <div class="photo-overlay-1"></div>
+                    <div class="photo-overlay-1" onclick="openDetail(0)"></div>
                     <div class="photo-overlay-2 p-3 justify-content-end">
                         <button class="btn btn-light m-1 hyper-text-w">
                             <img src="icon/heart.svg" width="16px">
@@ -417,9 +417,9 @@
             </div>
 
             <div class="col px-4">
-                <div class="row mb-4 mx-0 detail-hover position-relative" onclick="openDetail(1)">
+                <div class="row mb-4 mx-0 detail-hover position-relative">
                     <img src="image/test.png" width="100%" class="p-0">
-                    <div class="photo-overlay-1"></div>
+                    <div class="photo-overlay-1" onclick="openDetail(1)"></div>
                     <div class="photo-overlay-2 p-3 justify-content-end">
                         <button class="btn btn-light m-1 hyper-text-w">
                             <img src="icon/heart.svg" width="16px">
