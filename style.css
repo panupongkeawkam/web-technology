@@ -1,7 +1,7 @@
 
     body {
         font-family: 'Roboto', sans-serif;
-        font-size: .92em;
+        font-size: .9em;
     }
 
     a {
@@ -16,6 +16,7 @@
         transition: .25s;
         color: black;
         opacity: .6;
+        font-size: .9em;
     }
 
     .hyper-text-b:hover {
@@ -30,6 +31,7 @@
         transition: .25s;
         color: white;
         opacity: .8;
+        font-size: .9em;
     }
 
     .hyper-text-w:hover {
@@ -140,6 +142,7 @@
 
     .awards-cover {
         opacity: 1;
+        transition: .3s;
         background-image: url("icon/leaves.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -180,7 +183,8 @@
     .photo-overlay-2 {
         display: none;
         position: absolute;
-        width: 100%;
+        width: auto;
+        right: 0;
         transition: .3s;
     }
 
@@ -217,6 +221,10 @@
         opacity: 1;
         color: black;
         background: white;
+    }
+
+    .detail-btn-1:focus {
+        border: 1px solid grey;
     }
 
     .detail-btn-2 {

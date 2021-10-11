@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Free Images & Pictures | Unsplash</title>
+    <link rel="shortcut icon" href="../icon/unsplash-logo.svg"> <!-- icon ตรง tab browser -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    <script src="../script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid shadow-sm position-sticky top-0" style="z-index: 1">
+        <div class="row bg-white">
+            <div class="navbar navbar-expand" style="height: 60px;">
+
+                <!-- ลิงค์หน้าหลักและโลโก้ unsplash -->
+                <a href="../" class="d-flex pointer text-dark" style="height: 100%;">
+                    <img src="../icon/unsplash-logo.svg" height="100%">
+                    <div
+                        class="d-flex flex-column p-xl-1 justify-content-center d-xl-flex d-lg-none d-md-none d-sm-none">
+                        <span style="line-height: 1.3em;"><b>Unsplash</b></span>
+                        <span style="line-height: 1.3em; font-size: .8em;" class="text-nowrap">Photos for
+                            everyone</span>
+                    </div>
+                </a>
+
+                <!-- container สำหรับครอบ search-box และ drop-down -->
+                <div class="mx-3 position-relative" style="width: 100%;">
+                    <!-- ช่องการค้นหา -->
+                    <div id="seachBox1" class="input-group rounded-pill py-1 search-box-container"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                            <img class="icon-thin" src="../icon/search.svg" height="60%">
+                        </span>
+                        <input class="form-control input-non-effect px-0" type="search"
+                            placeholder="Search free high-resolution photos"
+                            onfocus="setSearchBGAndBorder('white', '#d7d7d7', 0)"
+                            onfocusout="setSearchBGAndBorder('#ececec', 'white', 0)">
+                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                            <img class="icon-thin" src="../icon/scanner.svg" height="60%">
+                        </span>
+                    </div>
+
+                    <!-- drop-down ของ searchBox -->
+                    <ul class="dropdown-menu mt-1 p-3 shadow" aria-labelledby="seachBox1" style="width: 100%;">
+                        <li class="mb-4">
+                            <label class="form-label" style="font-size: .92em;">Recent Searches · <a
+                                    class="hyper-text-b">Clear</a></label>
+                            <form class="from form-inline">
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <!-- แก้ text -->
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                            </form>
+                        </li>
+                        <li class="mb-4">
+                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                            <form class="from form-inline">
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
+                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
+                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
+                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
+                                    <!-- แก้ text -->
+                                </button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
+                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
+                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                            </form>
+                        </li>
+                        <li class="mb-4">
+                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                            <form class="from form-inline">
+                                <div class="btn p-0 border rounded me-1 mb-1">
+                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
+                                </div>
+                                <div class="btn p-0 border rounded me-1 mb-1">
+                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
+                                </div>
+                                <div class="btn p-0 border rounded me-1 mb-1">
+                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span> <!-- แก้ text -->
+                                </div>
+                                <div class="btn p-0 border rounded me-1 mb-1">
+                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
+                                </div>
+                                <div class="btn p-0 border rounded me-1 mb-1">
+                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                            <form class="from form-inline">
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <!-- แก้ text -->
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง (บางปุ่ม) -->
+                <a class="nav-link hyper-text-b" href="#">Brands</a>🏆
+                <a class="nav-link text-dark text-nowrap ps-2" style="font-size: .9em;">Unsplash Awards</a>
+                <div class="vertical-line mx-3"></div>
+                <a class="nav-link hyper-text-b text-nowrap" href="login/">Log in</a>
+                <a class="nav-link hyper-text-b text-nowrap px-0" href="#">
+                    <input class="btn border-secondary hyper-text-b custom-outline-btn" type="button"
+                        value="Submit a photo">
+                </a>
+
+                <!-- เมนูบาร์ขวาสุด -->
+                <a class="nav-link icon-thin" href="#" id="listMenu" class="dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="../icon/list.svg">
+                </a>
+
+                <!-- dropdown ของเมนูบาร์ขวาสุด -->
+                <div class="dropdown-menu me-3 p-0 dropdown-animation" aria-labelledby="listMenu"
+                    style="right: 0; left: auto;">
+                    <div class="row p-4">
+                        <div class="col d-flex flex-row">
+                            <div class="col-4 pe-2">
+                                <img src="../icon/company.svg">
+                            </div>
+                            <div class="col-8 pe-5">
+                                <span class="py-4" style="font-size: .9em;"><b>Company</b></span>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <!-- แก้ text -->
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-row px-5">
+                            <div class="col-4 pe-2">
+                                <img src="../icon/product.svg">
+                            </div>
+                            <div class="col-8 pe-5">
+                                <span class="py-4" style="font-size: .9em;"><b>Product</b></span>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <!-- แก้ text -->
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-row">
+                            <div class="col-4 pe-2">
+                                <img src="../icon/community.svg">
+                            </div>
+                            <div class="col-8 pe-5">
+                                <span class="py-4" style="font-size: .9em;"><b>Community</b></span>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <!-- แก้ text -->
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-4 py-3 border-top">
+                        <div class="col-8">
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a> <!-- แก้ text -->
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
+                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end">
+                            <img src="../icon/twitter.svg" height="20px" class="icon-thin mx-2">
+                            <img src="../icon/facebook.svg" height="20px" class="icon-thin mx-2">
+                            <img src="../icon/instagram.svg" height="20px" class="icon-thin mx-2">
+                        </div>
+                    </div>
+                    <div class="dropdown-indent-shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row p-2 py-3 text-white d-flex flex-column justify-content-between"
+            style="height: var(--current-height); background: #111111;">
+            <div class="row-12 d-flex justify-content-between">
+                <a>2021 Edition</a>
+                <a class="hyper-text-w" style="font-size: 1em;">FAQ</a>
+            </div>
+            <div class="row-12 d-flex align-items-center justify-content-center flex-column frame-1">
+                <span class="display-1 fw-bold" style="letter-spacing: .08em;">Unsplash Awards</span>
+                <h2>Celebrating the best of open photography</h2>
+            </div>
+            <div class="row-12 d-flex justify-content-between">
+                <a>Open October 1st — October 31st, 2021</a>
+                <a>Finalists announced November 25th, 2021</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5" style="background: #111111; border-top: 1px solid #4c4c4c">
+        <div class="row py-4 d-flex justify-content-center text-white">
+            <div class="col-4 py-5 pe-5">
+                How to participate
+                Select the category you’d like to participate in, and click Submit.
+                You can either submit a new photo or choose a photo from your library.
+                If choosing a photo from your library — only photos submitted after October 31st 2020 will be eligible
+                for
+                this year’s Awards.</div>
+            <div class="col-4 py-5 ps-5">
+                How to participate
+                Select the category you’d like to participate in, and click Submit.
+                You can either submit a new photo or choose a photo from your library.
+                If choosing a photo from your library — only photos submitted after October 31st 2020 will be eligible
+                for
+                this year’s Awards.
+                Note: All images that have been curated to the Awards topics between November 1st 2020 and October 31st
+                2021
+                are automatically submitted to this year’s Awards. The number of eligible photos will be shown under the
+                Submit button.
+
+                Read more about our rules and regulations here.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
