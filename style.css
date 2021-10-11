@@ -1,7 +1,7 @@
 
     body {
         font-family: 'Roboto', sans-serif;
-        font-size: .9em;
+        font-size: .92em;
     }
 
     a {
@@ -13,7 +13,9 @@
     }
 
     .hyper-text-b {
+        transition: .25s;
         color: black;
+        opacity: .6;
     }
 
     .hyper-text-b:hover {
@@ -21,15 +23,13 @@
     }
 
     .hyper-text-w {
+        transition: .25s;
         color: white;
+        opacity: .8;
     }
 
     .hyper-text-w:hover {
         color: white;
-    }
-
-    .hyper-text-b, .hyper-text-w {
-        opacity: .8;
     }
 
     .hyper-text-b:hover, .hyper-text-w:hover {
@@ -65,7 +65,7 @@
     }
 
     .icon-thin {
-        opacity: .45;
+        opacity: .5;
     }
 
     .icon-thin:hover {
@@ -79,6 +79,16 @@
         border: 1px solid white;
     }
 
+    .in-dropdown-btn {
+        font-size: .9em;
+        color: hsl(0, 0%, 0%, 70%);
+    }
+
+    .in-dropdown-btn:hover {
+        background: #f4f4f4;
+        color: hsl(0, 0%, 0%, 70%);
+    }
+
     .input-non-effect {
         font-size: .96em;
         background: transparent;
@@ -88,6 +98,11 @@
     .input-non-effect:focus {
         background: transparent;
         box-shadow: none;
+    }
+
+    .custom-outline-btn {
+        font-size: .9em;
+        opacity: 1;
     }
 
     .custom-outline-btn:hover {

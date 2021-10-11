@@ -23,10 +23,10 @@
 </head>
 
 <body>
-    <div class="container-fluid shadow-sm">
+    <div class="container-fluid shadow-sm position-sticky top-0" style="z-index: 1">
 
         <!-- เพจบาร์ด้านบนสุด -->
-        <div class="row">
+        <div class="row bg-white">
             <div class="navbar navbar-expand" style="height: 60px;">
 
                 <!-- ลิงค์หน้าหลักและโลโก้ unsplash -->
@@ -39,18 +39,94 @@
                     </div>
                 </a>
 
-                <!-- ช่องการค้นหา -->
-                <div class="input-group rounded-pill mx-3 py-1 search-box-container" style="width: 100%;">
-                    <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
-                        <img class="icon-thin" src="icon/search.svg" height="60%">
-                    </span>
-                    <input class="form-control input-non-effect px-0" type="search"
-                        placeholder="Search free high-resolution photos"
-                        onfocus="setSearchBGAndBorder('white', '#d7d7d7', 0)"
-                        onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 0)">
-                    <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
-                        <img class="icon-thin" src="icon/scanner.svg" height="60%">
-                    </span>
+                <!-- container สำหรับครอบ search-box และ drop-down -->
+                <div class="mx-3 position-relative" style="width: 100%;">
+                    <!-- ช่องการค้นหา -->
+                    <div id="seachBox1" class="input-group rounded-pill py-1 search-box-container"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                            <img class="icon-thin" src="icon/search.svg" height="60%">
+                        </span>
+                        <input class="form-control input-non-effect px-0" type="search"
+                            placeholder="Search free high-resolution photos"
+                            onfocus="setSearchBGAndBorder('white', '#d7d7d7', 0)"
+                            onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 0)">
+                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                            <img class="icon-thin" src="icon/scanner.svg" height="60%">
+                        </span>
+                    </div>
+
+                    <!-- drop-down ของ searchBox -->
+                    <ul class="dropdown-menu mt-1 p-3" aria-labelledby="seachBox1" style="width: 100%;">
+                        <li class="mb-4">
+                            <label class="form-label" style="font-size: .92em;">Recent Searches · <a
+                                    class="hyper-text-b">Clear</a></label>
+                            <form class="from form-inline">
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                            </form>
+                        </li>
+                        <li class="mb-4">
+                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                            <form class="from form-inline">
+                                <button class="btn border px-3 py-2 in-dropdown-btn">
+                                    <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">
+                                    <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">
+                                    <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">
+                                    <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">
+                                    <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                </button>
+                            </form>
+                        </li>
+                        <li class="mb-4">
+                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                            <form class="from form-inline">
+                                <div class="btn p-0 border rounded">
+                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                </div>
+                                <div class="btn p-0 border rounded">
+                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                </div>
+                                <div class="btn p-0 border rounded">
+                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                </div>
+                                <div class="btn p-0 border rounded">
+                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                </div>
+                                <div class="btn p-0 border rounded">
+                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                            <form class="from form-inline">
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                            </form>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง (บางปุ่ม) -->
@@ -59,8 +135,8 @@
                 <div class="vertical-line mx-3"></div>
                 <a class="nav-link hyper-text-b text-nowrap" href="login/index.html">Log in</a>
                 <a class="nav-link hyper-text-b text-nowrap px-0" href="#">
-                    <input class="btn border-secondary hyper-text-b custom-outline-btn" style="font-size: .9em;"
-                        type="button" value="Submit a photo">
+                    <input class="btn border-secondary hyper-text-b custom-outline-btn" type="button"
+                        value="Submit a photo">
                 </a>
 
                 <!-- เมนูบาร์ขวาสุด -->
@@ -71,7 +147,7 @@
         </div>
 
         <!-- เพจบาร์ตรง category รูป -->
-        <div class="row">
+        <div class="row bg-white">
             <div class="navbar navbar-expand pb-0">
                 <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b"
                     style="border-bottom: 2px solid black">
@@ -103,17 +179,96 @@
                             class="hyper-text-w text-decoration-underline">freely-usable
                             images.</a></h6>
                     <h6 class="text-light mb-4">Powered by creators everywhere.</h6>
-                    <div class="input-group rounded search-box-container mb-3 py-2" style="width: 100%;">
-                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
-                            <img class="icon-thin" src="icon/search.svg" height="60%">
-                        </span>
-                        <input class="form-control input-non-effect px-0" type="search"
-                            placeholder="Search free high-resolution photos"
-                            onfocus="setSearchBGAndBorder('white', '#d7d7d7', 1)"
-                            onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 1)">
-                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
-                            <img class="icon-thin" src="icon/scanner.svg" height="60%">
-                        </span>
+
+
+                    <!-- container สำหรับครอบ search-box และ drop-down -->
+                    <div class="mb-3 position-relative" style="width: 100%;">
+                        <!-- ช่องการค้นหา -->
+                        <div id="seachBox2" class="input-group rounded py-2 search-box-container"
+                            data-bs-toggle="dropdown" aria-expanded="true">
+                            <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                                <img class="icon-thin" src="icon/search.svg" height="60%">
+                            </span>
+                            <input class="form-control input-non-effect px-0" type="search"
+                                placeholder="Search free high-resolution photos"
+                                onfocus="setSearchBGAndBorder('white', '#d7d7d7', 1)"
+                                onfocusout="setSearchBGAndBorder('#f0ecec', 'white', 1)">
+                            <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
+                                <img class="icon-thin" src="icon/scanner.svg" height="60%">
+                            </span>
+                        </div>
+
+                        <!-- drop-down ของ searchBox -->
+                        <ul class="dropdown-menu mt-1 p-3" aria-labelledby="seachBox2" style="width: 100%;">
+                            <li class="mb-4">
+                                <label class="form-label" style="font-size: .92em;">Recent Searches · <a
+                                        class="hyper-text-b">Clear</a></label>
+                                <form class="from form-inline">
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                </form>
+                            </li>
+                            <li class="mb-4">
+                                <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                                <form class="from form-inline">
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">
+                                        <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                    </button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">
+                                        <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                    </button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">
+                                        <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                    </button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">
+                                        <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                    </button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">
+                                        <img src="icon/graph-up.svg" height="16px" class="me-2">logo
+                                    </button>
+                                </form>
+                            </li>
+                            <li class="mb-4">
+                                <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                                <form class="from form-inline">
+                                    <div class="btn p-0 border rounded">
+                                        <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                    </div>
+                                    <div class="btn p-0 border rounded">
+                                        <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                    </div>
+                                    <div class="btn p-0 border rounded">
+                                        <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                    </div>
+                                    <div class="btn p-0 border rounded">
+                                        <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                    </div>
+                                    <div class="btn p-0 border rounded">
+                                        <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 in-dropdown-btn">Logo</span>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <label class="form-label" style="font-size: .92em;">Recent Searches</label>
+                                <form class="from form-inline">
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                    <button class="btn border px-3 py-2 in-dropdown-btn">logo</button>
+                                </form>
+                            </li>
+                        </ul>
                     </div>
                     <p class="text-light">Trending: <a class="hyper-text-w">flower</a>, <a
                             class="hyper-text-w">wall</a>, <a class="hyper-text-w">papers</a>, <a
