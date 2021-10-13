@@ -9,16 +9,16 @@ request.onreadystatechange = function () {
 request.open("GET", requestURL, true);
 request.send();
 
-function writePhotoGallery(json) {
-    // alert("yes");
-    // alert(json.data[0].image);
-    var columnClass = {center: "col p-0"}
-    for (var i = 0; i < 3; i++) {
-        document.getElementById("gallery").innerHTML += `<div class="col p-0">`
+// function writePhotoGallery(json) {
+//     alert("yes");
+//     alert(json.data[0].image);
+//     var columnClass = {center: "col p-0", middle: "col px-4"}
+//     for (var i = 0; i < 3; i++) {
+//         document.getElementById("gallery").innerHTML += `<div class="col p-0">`
         
-    }
-    // alert(json.data.length / 3);
-}
+//     }
+//     alert(json.data.length / 3);
+// }
 
 /* <div class="col p-0">
     <div class="row mb-4 mx-0 detail-hover position-relative">
