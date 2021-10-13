@@ -1,13 +1,57 @@
-$('.dropdown-toggle').dropdown()
+var localFile = 'editorial.json';
+var request = new XMLHttpRequest();
+var jsonData;
 
-alert("yes")
+request.onreadystatechange = function () {
+    if (request.readyState == 4 && request.status == 200) {
+        writePhotoGallery(JSON.parse(request.responseText));
+    }
+};
+
+request.open("GET", localFile, true);
+request.send();
+
+function writePhotoGallery(json) {
+    jsonData = json;
+    var index = 0;
+    var gallery = document.getElementById("gallery");
+    var columnClass = ["col p-0", "col px-4", "col p-0"];
+    for (var i = 0; i < 3; i++) {
+        gallery.innerHTML += `<div id="column${i}" class="${columnClass[i]}">`;
+        for (var j = 0; j < 6; j++) {
+            document.getElementById(`column${i}`).innerHTML += `<div class="row mb-4 mx-0 detail-hover position-relative">
+                                                                <img src="image/${index}.jpg" width="100%" class="p-0">
+                                                                <div class="photo-overlay-1" onclick="openDetail(${index})"></div>
+                                                                <div class="photo-overlay-2 p-3 justify-content-end">
+                                                                    <button class="btn btn-light m-1 hyper-text-w">
+                                                                        <img src="icon/heart.svg" width="16px">
+                                                                    </button>
+                                                                    <button class="btn btn-light m-1 hyper-text-w">
+                                                                        <img src="icon/plus.svg" width="16px">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="photo-overlay-3 p-3 justify-content-between bottom-0">
+                                                                    <div class="btn px-0 hyper-text-w">
+                                                                        <img src="user-icon/${index}.jpg" height="32px" class="rounded-pill">
+                                                                        <span class="text-white mx-2">${json.data[index].userName}</span>
+                                                                    </div>
+                                                                    <button class="btn btn-light m-1 hyper-text-w">
+                                                                        <img src="icon/arrow-down.svg" width="16px">
+                                                                    </button>
+                                                                </div>
+                                                            </div>`;
+            index++;
+        }
+        gallery.innerHTML += `</div>`;
+    }
+}
 
 function setSearchBGAndBorder(BGColour, borerColour, position) {
     document.getElementsByClassName("search-box-container")[position].style.background = BGColour;
     document.getElementsByClassName("search-box-container")[position].style.border = `1px solid ${borerColour}`;
 }
 
-function openDetail(index) {
+function openDetail(photoIndex) {
     document.body.style.overflow = 'hidden';
     document.getElementById("photoDetail").innerHTML = `<img src="icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none';  document.body.style.overflow = 'auto'">
                                                             <div class="d-flex pt-3 justify-content-center photo-detail-container">
@@ -16,9 +60,9 @@ function openDetail(index) {
                                                                     <div class="row pb-4">
                                                                         <div class="col d-flex justify-content-start">
                                                                             <div class="btn p-0 pointer d-flex flex-row">
-                                                                                <img src="user-icon/${0}.jpg" height="30px" class="rounded-pill">
+                                                                                <img src="user-icon/${photoIndex}.jpg" height="30px" class="rounded-pill">
                                                                                 <span class="mx-2 d-flex flex-column align-items-start" style="font-size: .9em;">
-                                                                                    <span style="line-height: 1.3em;">John Judge</span>
+                                                                                    <span style="line-height: 1.3em;">${jsonData.data[photoIndex].userName}</span>
                                                                                     <a href="" style="font-size: .75em; line-height: 1.3em;">Available for hire ☑︎</a>
                                                                                 </span>
                                                                             </div>
@@ -41,7 +85,7 @@ function openDetail(index) {
                                                                     </div>
 
                                                                     <div class="row d-flex justify-content-center">
-                                                                        <img src="image/${index}.jpg" height="720px" class="m-0 p-0" style="width: auto;">
+                                                                        <img src="image/${photoIndex}.jpg" height="720px" class="m-0 p-0" style="width: auto;">
                                                                     </div>
 
                                                                     <div class="row py-4">
@@ -49,15 +93,15 @@ function openDetail(index) {
                                                                         <div class="col d-flex">
                                                                             <div class="col-3 d-flex flex-column">
                                                                                 <span class="text-muted" style="font-size: .9em;">Views</span>
-                                                                                <span>--</span>
+                                                                                <span>${jsonData.data[photoIndex].views}</span>
                                                                             </div>
                                                                             <div class="col-3 d-flex flex-column">
                                                                                 <span class="text-muted" style="font-size: .9em;">Downloads</span>
-                                                                                <span>--</span>
+                                                                                <span>${jsonData.data[photoIndex].downloads}</span>
                                                                             </div>
                                                                             <div class="col-3 d-flex flex-column">
                                                                                 <span class="text-muted" style="font-size: .9em;">Featured in</span>
-                                                                                <span>Editorial</span>
+                                                                                <span>${jsonData.data[photoIndex].featured}</span>
                                                                             </div>
                                                                         </div>
 

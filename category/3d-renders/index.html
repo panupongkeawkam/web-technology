@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../style.css">
     <script src="script.js"></script>
-    <script src="../../script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +59,17 @@
             </div>
         </div>
     </div>
-    <h1>3d-renders</h1>
+
+    <div class="container">
+
+        <!-- element สำหรับ insert รูป -->
+        <div id="gallery" class="row"></div>
+
+    </div>
+
+    <!-- element สำหรับแสดง detail รูป -->
+    <div id="photoDetail" class="container-fluid p-0 position-fixed photo-detail-overlay" style="display: none;"></div>
+
 </body>
 
 </html>

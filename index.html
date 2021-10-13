@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="show-data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +23,8 @@
 </head>
 
 <body>
-    <!-- container สำหรับเพจบาร์ด้านบนสุดและเพจบาร์ตรง category รูป  --> <!-- ยังไม่สมบูรณ์ -->
+    <!-- container สำหรับเพจบาร์ด้านบนสุดและเพจบาร์ตรง category รูป  -->
+    <!-- ยังไม่สมบูรณ์ -->
     <div class="container-fluid shadow-sm position-sticky top-0" style="z-index: 1">
 
         <!-- เพจบาร์ด้านบนสุด -->
@@ -99,7 +99,8 @@
                             <label class="form-label" style="font-size: .92em;">Recent Searches</label>
                             <form class="from form-inline">
                                 <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start"> <!-- แก้รูป -->
+                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <!-- แก้รูป -->
                                     <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
                                 </div>
                                 <div class="btn p-0 border rounded me-1 mb-1">
@@ -399,116 +400,13 @@
             </div>
         </div>
 
-        <!-- ทดสอบสร้าง gallery elements ของจริงต้องใช้ JS สร้าง (ยังไม่ได้ดัก responsive) -->
-        <div id="gallery" class="row">
-
-            <!-- elements ต้นแบบสำหรับรูปภาพ 1 รูป -->
-            <div class="col p-0">
-                <div class="row mb-4 mx-0 detail-hover position-relative">
-                    <img src="image/0.jpg" width="100%" class="p-0">
-                    <div class="photo-overlay-1" onclick="openDetail(0)"></div>
-                    <div class="photo-overlay-2 p-3 justify-content-end">
-                        <button class="btn btn-light m-1 hyper-text-w">
-                            <img src="icon/heart.svg" width="16px">
-                        </button>
-                        <button class="btn btn-light m-1 hyper-text-w">
-                            <img src="icon/plus.svg" width="16px">
-                        </button>
-                    </div>
-                    <div class="photo-overlay-3 p-3 justify-content-between bottom-0">
-                        <div class="btn px-0 hyper-text-w">
-                            <img src="user-icon/0.jpg" height="32px" class="rounded-pill">
-                            <span class="text-white mx-2">John Judge</span>
-                        </div>
-                        <button class="btn btn-light m-1 hyper-text-w">
-                            <img src="icon/arrow-down.svg" width="16px">
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col px-4">
-            </div>
-
-            <div class="col p-0">
-            </div>
-        </div>
+        <!-- element สำหรับ insert รูป -->
+        <div id="gallery" class="row"></div>
 
     </div>
 
     <!-- element สำหรับแสดง detail รูป -->
-    <div id="photoDetail" class="container-fluid p-0 position-fixed photo-detail-overlay" style="display: none;">
-
-        <!-- element ที่ถูก comment จะถูกสร้างด้วย JS และดึงข้อมูลจาก JSON -->
-
-        <!-- <img src="icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none'; document.body.style.overflow = 'auto'">
-        <div class="d-flex pt-3 justify-content-center photo-detail-container">
-            <div class="col-10 p-3 bg-white rounded-top">
-
-                <div class="row pb-4">
-                    <div class="col d-flex justify-content-start">
-                        <div class="btn p-0 pointer d-flex flex-row">
-                            <img src="icon/pfp-for-test.png" height="30px" class="rounded-pill">
-                            <span class="mx-2 d-flex flex-column align-items-start" style="font-size: .9em;">
-                                <span style="line-height: 1.3em;">John Judge</span>
-                                <a href="" style="font-size: .75em; line-height: 1.3em;">Available for hire ☑︎</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="col d-flex justify-content-end">
-                        <button class="btn btn-light btn-outline-secondary py-0 ms-2 detail-btn-1">
-                            <img src="icon/heart.svg" width="12px">
-                        </button>
-                        <button class="btn btn-light btn-outline-secondary py-0 ms-2 detail-btn-1">
-                            <img src="icon/plus.svg" width="12px">
-                        </button>
-                        <div class="btn-group ms-2 rounded">
-                            <button class="btn text-white py-1 detail-btn-2">Download free</button>
-                            <button class="btn p-1 detail-btn-2" style="margin-left: 1px;">
-                                <img src="icon/dropdown-arrow.svg" width="20px">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row d-flex justify-content-center">
-                    <img src="image/main-page-cover.png" height="720px" class="m-0 p-0" style="width: auto;">
-                </div>
-
-                <div class="row py-4">
-
-                    <div class="col d-flex">
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-muted" style="font-size: .9em;">Views</span>
-                            <span>--</span>
-                        </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-muted" style="font-size: .9em;">Downloads</span>
-                            <span>--</span>
-                        </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-muted" style="font-size: .9em;">Featured in</span>
-                            <span>Editorial</span>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="col d-flex justify-content-end">
-                            <button class="btn btn-outline-secondary py-1 ms-2 detail-btn-1">
-                                <img src="icon/share.svg" width="12px" class="me-1">Share
-                            </button>
-                            <button class="btn btn-outline-secondary py-1 ms-2 detail-btn-1">
-                                <img src="icon/info.svg" width="12px" class="me-1">Info
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div> -->
-    </div>
+    <div id="photoDetail" class="container-fluid p-0 position-fixed photo-detail-overlay" style="display: none;"></div>
 
 </body>
 
