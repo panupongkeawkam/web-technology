@@ -85,7 +85,7 @@ function openDetail(photoIndex) {
                                                                     </div>
 
                                                                     <div class="row d-flex justify-content-center">
-                                                                        <img src="image/${photoIndex}.jpg" height="720px" class="m-0 p-0" style="width: auto;">
+                                                                        <img src="image/${photoIndex}.jpg" height="${screen.height * 0.75}px" class="m-0 p-0" style="width: auto;">
                                                                     </div>
 
                                                                     <div class="row py-4">
