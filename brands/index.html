@@ -76,6 +76,12 @@
         font-size: 16px;
         color: #737373;
     }
+
+    .container-animation{
+        margin:auto;
+        width: 1320px;
+        height: 1320px;
+    }
 </style>
 
 <body>
@@ -180,8 +186,13 @@
                 <h4 class="font-weight-bold">They just have to add value.</h4>
             </div>
         </div>
-        <div class="row" style="margin-top: 5%;">123</div>
-        <!--รูปตรงกลาง-->
+        <!-- รูปหมุนๆ -->
+        <div class="row mt-5 pt-5">
+            <div class="container-animation position-relative bg-primary">
+                <img class="position-absolute" style="width: 100%;" src="icon/background.svg">
+                <img src="image/small_04.png" class="position-absolute p-0 m-0" style="top:calc(50% - 90px);left:calc(50% - 90px);width:180px">
+            </div>
+        </div>
         <div class="row justify-content-center" style="margin-top: 6%">
             <div class="col-6">
                 <h1 class="text-center font-weight-bold display-4">Advertising for those who know there’s a better way.
