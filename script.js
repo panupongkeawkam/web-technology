@@ -54,7 +54,7 @@ function setSearchBGAndBorder(BGColour, borerColour, position) {
 function openDetail(photoIndex) {
     document.body.style.overflow = 'hidden';
     document.getElementById("photoDetail").innerHTML = `<img src="icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none';  document.body.style.overflow = 'auto'">
-                                                            <div class="d-flex pt-3 justify-content-center photo-detail-container">
+                                                            <div class="d-flex pt-3 justify-content-center photo-detail-container overflow-auto">
                                                                 <div class="col-10 p-3 bg-white rounded-top">
 
                                                                     <div class="row pb-4">
