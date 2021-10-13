@@ -55,7 +55,7 @@ function openDetail(photoIndex) {
     document.body.style.overflow = 'hidden';
     document.getElementById("photoDetail").innerHTML = `<img src="icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none';  document.body.style.overflow = 'auto'">
                                                             <div class="d-flex pt-3 justify-content-center photo-detail-container overflow-auto">
-                                                                <div class="col-10 p-3 bg-white rounded-top">
+                                                                <div class="col-10 p-3 bg-white rounded">
 
                                                                     <div class="row pb-4">
                                                                         <div class="col d-flex justify-content-start">
@@ -85,7 +85,7 @@ function openDetail(photoIndex) {
                                                                     </div>
 
                                                                     <div class="row d-flex justify-content-center">
-                                                                        <img src="image/${photoIndex}.jpg" height="${screen.height * 0.75}px" class="m-0 p-0" style="width: auto;">
+                                                                        <img src="image/${photoIndex}.jpg" height="${screen.height * 0.73}px" class="m-0 p-0" style="width: auto;">
                                                                     </div>
 
                                                                     <div class="row py-4">
