@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <!-- container สำหรับเพจบาร์ด้านบนสุดและเพจบาร์ตรง category รูป  --> <!-- ยังไม่สมบูรณ์ -->
     <div class="container-fluid shadow-sm position-sticky top-0" style="z-index: 1">
 
         <!-- เพจบาร์ด้านบนสุด -->
@@ -97,7 +98,7 @@
                             <label class="form-label" style="font-size: .92em;">Recent Searches</label>
                             <form class="from form-inline">
                                 <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start">
+                                    <img src="icon/btn-image-icon.png" height="36px" class="rounded-start"> <!-- แก้รูป -->
                                     <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
                                 </div>
                                 <div class="btn p-0 border rounded me-1 mb-1">
@@ -236,18 +237,18 @@
                 <a href="category/experimental/"
                     class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Experimental</a>
                 <a href="category/fashion/" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Fashion</a>
-                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a>
-                <!-- แก้ text -->
-                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a>
-                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a>
-                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a>
-                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a>
-                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Editorial</a>
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Flim</a>
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Food & Drink</a>
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Health & Wellness</a>
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Nature</a>
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">People</a>
+                <a href="" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">Street Photography</a>
             </div>
         </div>
 
     </div>
 
+    <!-- container สำหรับ header ใหญ่  -->
     <div class="container-fluid picture-cover">
 
         <div class="row">
@@ -353,11 +354,14 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- hyper text ใต้ search box -->
                     <p class="text-light">Trending: <a class="hyper-text-w">flower</a>, <a
                             class="hyper-text-w">wall</a>, <a class="hyper-text-w">papers</a>, <a
                             class="hyper-text-w">backgrounds</a>,
                         <a class="hyper-text-w">happy</a>, <a class="hyper-text-w">love</a>
                     </p>
+
                 </div>
             </div>
 
@@ -384,7 +388,8 @@
 
     <div class="container">
 
-        <div class="row py-5 d-flex justify-content-center">
+        <!-- element ที่ link ไปหน้า awards -->
+        <div class="row py-5 d-flex justify-content-center" onclick="window.open('awards/', '_self')">
             <div class="row d-flex flex-column text-center py-5 d-flex awards-cover">
                 <h2 class="fw-bold text-white">Unsplash Awards 2021</h2>
                 <h5 style="color: #bbb">Now accepting submissions to the 5<sup>th</sup> of the Unsplash Awards. <span><a
@@ -395,9 +400,11 @@
 
         <!-- ทดสอบสร้าง gallery elements ของจริงต้องใช้ JS สร้าง (ยังไม่ได้ดัก responsive) -->
         <div class="row">
+
+            <!-- elements ต้นแบบสำหรับรูปภาพ 1 รูป -->
             <div class="col p-0">
                 <div class="row mb-4 mx-0 detail-hover position-relative">
-                    <img src="image/main-page-cover.png" width="100%" class="p-0">
+                    <img src="image/0.jpg" width="100%" class="p-0">
                     <div class="photo-overlay-1" onclick="openDetail(0)"></div>
                     <div class="photo-overlay-2 p-3 justify-content-end">
                         <button class="btn btn-light m-1 hyper-text-w">
@@ -409,7 +416,7 @@
                     </div>
                     <div class="photo-overlay-3 p-3 justify-content-between bottom-0">
                         <div class="btn px-0 hyper-text-w">
-                            <img src="icon/pfp-for-test.png" height="32px" class="rounded-pill">
+                            <img src="user-icon/0.jpg" height="32px" class="rounded-pill">
                             <span class="text-white mx-2">John Judge</span>
                         </div>
                         <button class="btn btn-light m-1 hyper-text-w">
@@ -417,30 +424,10 @@
                         </button>
                     </div>
                 </div>
+
             </div>
 
             <div class="col px-4">
-                <div class="row mb-4 mx-0 detail-hover position-relative">
-                    <img src="image/test.png" width="100%" class="p-0">
-                    <div class="photo-overlay-1" onclick="openDetail(1)"></div>
-                    <div class="photo-overlay-2 p-3 justify-content-end">
-                        <button class="btn btn-light m-1 hyper-text-w">
-                            <img src="icon/heart.svg" width="16px">
-                        </button>
-                        <button class="btn btn-light m-1 hyper-text-w">
-                            <img src="icon/plus.svg" width="16px">
-                        </button>
-                    </div>
-                    <div class="photo-overlay-3 p-3 justify-content-between bottom-0">
-                        <div class="btn px-0 hyper-text-w">
-                            <img src="icon/pfp-for-test.png" height="32px" class="rounded-pill">
-                            <span class="text-white mx-2">John Judge</span>
-                        </div>
-                        <button class="btn btn-light m-1 hyper-text-w">
-                            <img src="icon/arrow-down.svg" width="16px">
-                        </button>
-                    </div>
-                </div>
             </div>
 
             <div class="col p-0">
