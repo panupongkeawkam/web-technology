@@ -9,3 +9,10 @@
         background-position: center;
         background-size: contain;
     }
+
+    .background-image {
+        height: var(--current-height);
+        border-top: 1px solid #4c4c4c;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }

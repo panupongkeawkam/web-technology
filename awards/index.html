@@ -24,201 +24,15 @@
 </head>
 
 <body>
+
     <div class="container-fluid shadow-sm position-sticky top-0" style="z-index: 1">
-        <div class="row bg-white">
-            <div class="navbar navbar-expand" style="height: 60px;">
-
-                <!-- ลิงค์หน้าหลักและโลโก้ unsplash -->
-                <a href="../" class="d-flex pointer text-dark" style="height: 100%;">
-                    <img src="../icon/unsplash-logo.svg" height="100%">
-                    <div
-                        class="d-flex flex-column p-xl-1 justify-content-center d-xl-flex d-lg-none d-md-none d-sm-none">
-                        <span style="line-height: 1.3em;"><b>Unsplash</b></span>
-                        <span style="line-height: 1.3em; font-size: .8em;" class="text-nowrap">Photos for
-                            everyone</span>
-                    </div>
-                </a>
-
-                <!-- container สำหรับครอบ search-box และ drop-down -->
-                <div class="mx-3 position-relative" style="width: 100%;">
-                    <!-- ช่องการค้นหา -->
-                    <div id="seachBox1" class="input-group rounded-pill py-1 search-box-container"
-                        data-bs-toggle="dropdown" aria-expanded="true">
-                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
-                            <img class="icon-thin" src="../icon/search.svg" height="60%">
-                        </span>
-                        <input class="form-control input-non-effect px-0" type="search"
-                            placeholder="Search free high-resolution photos"
-                            onfocus="setSearchBGAndBorder('white', '#d7d7d7', 0)"
-                            onfocusout="setSearchBGAndBorder('#ececec', 'white', 0)">
-                        <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
-                            <img class="icon-thin" src="../icon/scanner.svg" height="60%">
-                        </span>
-                    </div>
-
-                    <!-- drop-down ของ searchBox -->
-                    <ul class="dropdown-menu mt-1 p-3 shadow" aria-labelledby="seachBox1" style="width: 100%;">
-                        <li class="mb-4">
-                            <label class="form-label" style="font-size: .92em;">Recent Searches · <a
-                                    class="hyper-text-b">Clear</a></label>
-                            <form class="from form-inline">
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <!-- แก้ text -->
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                            </form>
-                        </li>
-                        <li class="mb-4">
-                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
-                            <form class="from form-inline">
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
-                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
-                                </button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
-                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
-                                </button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
-                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
-                                    <!-- แก้ text -->
-                                </button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
-                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
-                                </button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
-                                    <img src="../icon/graph-up.svg" height="16px" class="me-2">logo
-                                </button>
-                            </form>
-                        </li>
-                        <li class="mb-4">
-                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
-                            <form class="from form-inline">
-                                <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
-                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
-                                </div>
-                                <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
-                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
-                                </div>
-                                <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
-                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span> <!-- แก้ text -->
-                                </div>
-                                <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
-                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
-                                </div>
-                                <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="../icon/btn-image-icon.png" height="36px" class="rounded-start">
-                                    <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Logo</span>
-                                </div>
-                            </form>
-                        </li>
-                        <li>
-                            <label class="form-label" style="font-size: .92em;">Recent Searches</label>
-                            <form class="from form-inline">
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <!-- แก้ text -->
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                                <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">logo</button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง (บางปุ่ม) -->
-                <a class="nav-link hyper-text-b" href="../brands/">Brands</a>🏆
-                <a class="nav-link text-dark text-nowrap ps-2" style="font-size: .9em;">Unsplash Awards</a>
-                <div class="vertical-line mx-3"></div>
-                <a class="nav-link hyper-text-b text-nowrap" href="../login/">Log in</a>
-                <a class="nav-link hyper-text-b text-nowrap px-0" href="#">
-                    <input class="btn border-secondary hyper-text-b custom-outline-btn" type="button"
-                        value="Submit a photo">
-                </a>
-
-                <!-- เมนูบาร์ขวาสุด -->
-                <a class="nav-link icon-thin" href="#" id="listMenu" class="dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <img src="../icon/list.svg">
-                </a>
-
-                <!-- dropdown ของเมนูบาร์ขวาสุด -->
-                <div class="dropdown-menu me-3 p-0 dropdown-animation" aria-labelledby="listMenu"
-                    style="right: 0; left: auto;">
-                    <div class="row p-4">
-                        <div class="col d-flex flex-row">
-                            <div class="col-4 pe-2">
-                                <img src="../icon/company.svg">
-                            </div>
-                            <div class="col-8 pe-5">
-                                <span class="py-4" style="font-size: .9em;"><b>Company</b></span>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <!-- แก้ text -->
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                            </div>
-                        </div>
-                        <div class="col d-flex flex-row px-5">
-                            <div class="col-4 pe-2">
-                                <img src="../icon/product.svg">
-                            </div>
-                            <div class="col-8 pe-5">
-                                <span class="py-4" style="font-size: .9em;"><b>Product</b></span>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <!-- แก้ text -->
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                            </div>
-                        </div>
-                        <div class="col d-flex flex-row">
-                            <div class="col-4 pe-2">
-                                <img src="../icon/community.svg">
-                            </div>
-                            <div class="col-8 pe-5">
-                                <span class="py-4" style="font-size: .9em;"><b>Community</b></span>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <!-- แก้ text -->
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b" style="font-size: .9em;">About</a></li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row px-4 py-3 border-top">
-                        <div class="col-8">
-                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
-                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a> <!-- แก้ text -->
-                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
-                            <a class="hyper-text-b me-3" style="font-size: .9em;">License</a>
-                        </div>
-                        <div class="col-4 d-flex justify-content-end">
-                            <img src="../icon/twitter.svg" height="20px" class="icon-thin mx-2">
-                            <img src="../icon/facebook.svg" height="20px" class="icon-thin mx-2">
-                            <img src="../icon/instagram.svg" height="20px" class="icon-thin mx-2">
-                        </div>
-                    </div>
-                    <div class="dropdown-indent-shape"></div>
-                </div>
-            </div>
+        <!-- เพจบาร์ด้านบนสุด -->
+        <!-- container สำหรับใส่ page bar -->
+        <div class="row bg-danger top-0" style="height: 60px;">
+            <h1>page bar elements (unsuccess)</h1>
         </div>
     </div>
+
 
     <div class="container-fluid">
         <div class="row p-2 py-3 text-white d-flex flex-column justify-content-between"
@@ -241,333 +55,56 @@
     <div class="container-fluid py-5" style="background: #111111; border-top: 1px solid #4c4c4c">
         <div class="row py-4 d-flex justify-content-center text-white">
             <div class="col-4 py-5 pe-5">
-                How to participate
-                Select the category you’d like to participate in, and click Submit.
-                You can either submit a new photo or choose a photo from your library.
-                If choosing a photo from your library — only photos submitted after October 31st 2020 will be eligible
-                for
-                this year’s Awards.</div>
+                The Unsplash Awards are a month-long celebration recognizing the powerful impact that the Unsplash
+                community has made through their generosity and artistry. Unsplash wouldn’t exist without the thousands
+                of contributors who freely gift their work and push creativity forward every day.
+                <br><br>
+                From the very best of architecture & interiors, to an all-new 3D category — enter your images into 11
+                categories designed to showcase the best of Unsplash. We’ve also invited amazing guest judges to help
+                select the featured images for each category.
+            </div>
             <div class="col-4 py-5 ps-5">
-                How to participate
-                Select the category you’d like to participate in, and click Submit.
-                You can either submit a new photo or choose a photo from your library.
-                If choosing a photo from your library — only photos submitted after October 31st 2020 will be eligible
-                for
-                this year’s Awards.
+                <h4><b>How to participate</b></h4>
+                <ol>
+                    <li class="my-2">Select the category you’d like to participate in, and click Submit.</li>
+                    <li class="my-2">You can either <b>submit a new photo or choose a photo from your library.</b></li>
+                    <li class="my-2">If choosing a photo from your library — only photos submitted after October 31st
+                        2020 will be
+                    </li>
+                </ol>
+                for this year’s Awards.
                 Note: All images that have been curated to the Awards topics between November 1st 2020 and October 31st
-                2021
-                are automatically submitted to this year’s Awards. The number of eligible photos will be shown under the
-                Submit button.
+                2021 are automatically submitted to this year’s Awards. The number of eligible photos will be shown
+                under the Submit button.
 
                 Read more about our rules and regulations here.
             </div>
         </div>
     </div>
 
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
+    <!-- element ต้นแบบ -->
+    <div class="container-fluid py-5 bg-secondary d-flex justify-content-center background-image"
+        style="background-image: url('image/test.jpg');">
+        <!-- แก้รูป -->
+        <div class="col-4 d-flex flex-column justify-content-between">
+            <div class="row d-flex pe-5 text-white">
+                <span style="font-size: .96em; opacity: .6;">Official Judge</span>
+                <span style="font-size: .96em;">Alex Ainslie — Google Chrome</span>
             </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
+            <div class="row py-4 pe-5 text-white">
+                <h1 class="fw-bold">3D Renders</h1><br> <!-- แก้ text -->
                 <p>For the first time ever, Unsplash is accepting a new category of images
                     outside
                     of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
                     into
                     JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
+                <p>Learn more <a class="hyper-text-b text-decoration-underline" style="color: #aaa;">here</a>.</p>
+                <span>
+                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <b>3D
+                            Renders</b></button>
+                </span>
             </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="container-fluid py-5 bg-danger d-flex justify-content-center"
-        style="background: #111111; border-top: 1px solid #4c4c4c">
-        <div class="col-4">
-            <div class="row py-4 d-flex pe-5 text-white">
-                <p style="font-size: 15px; opacity: .6;">Official Judge</p>
-                <p style="font-size: 15px;">Alex Ainslie — Google Chrome</p>
-            </div>
-            <div class="row py-4 d-flex pe-5 text-white">
-                <h1>3D Renders</h1><br>
-                <p>For the first time ever, Unsplash is accepting a new category of images
-                    outside
-                    of photography. Submit your 3-dimensional images, designed in the software of your choice, rendered
-                    into
-                    JPEG images.</p><br>
-                <p>Learn more <a class="hyper-text-w text-decoration-underline">here</a>.</p>
-            </div>
-            <div class="row py-4 pe-5 text-white">
-                <div>
-                    <button class="btn btn-light py-2 px-3" style="font-size: .96em;">Submit to <strong>3D Renders</strong></button>
-                </div>
-            </div>
-            <div class="mt-5 row py-4 d-flex pe-5 text-white">
-                <span>Photo by <a class="hyper-text-w">Richard Horvath</a></span>
-            </div>
+            <span class="text-white">Photo by <a class="hyper-text-w">Richard Horvath</a></span>
         </div>
         <div class="col-4"></div>
     </div>
@@ -577,78 +114,6 @@
             <h1>Judges</h1>
         </div>
         <div class="d-flex flex-column bd-highlight mb-3 text-white">
-            <div class="p-5 bd-highlight">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Profile">
-                    </div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Alex Ainslie</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Head of Design</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Icon">
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 bd-highlight">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Profile">
-                    </div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Alex Ainslie</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Head of Design</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Icon">
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 bd-highlight">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Profile">
-                    </div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Alex Ainslie</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Head of Design</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Icon">
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 bd-highlight">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Profile">
-                    </div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Alex Ainslie</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Head of Design</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Icon">
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 bd-highlight">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Profile">
-                    </div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Alex Ainslie</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Head of Design</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Icon">
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 bd-highlight">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Profile">
-                    </div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Alex Ainslie</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">Head of Design</div>
-                    <div class="p-3 flex-grow-1 bd-highlight">
-                        <img src="" alt="Icon">
-                    </div>
-                </div>
-            </div>
             <div class="p-5 bd-highlight">
                 <div class="d-flex flex-row bd-highlight mb-3">
                     <div class="p-3 flex-grow-1 bd-highlight">
