@@ -1,0 +1,14 @@
+.layout{
+    padding-bottom: 70px;
+    padding-top: 60px;
+}
+.wrapper{
+    box-sizing: border-box;
+    grid-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(3,[col-start] 1fr);
+}
+.box{
+    display: grid;
+    border: 1px solid #d1d1d1;
+}
