@@ -1,0 +1,11 @@
+.box{
+    display: grid;
+    border: 1px solid #d1d1d1;
+}
+.line{
+background-color: #eee;
+margin-left: 5%;
+margin-right: 2%;
+width: 93%;
+height: 1px;
+}
