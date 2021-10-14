@@ -1,14 +1,7 @@
-.wrapper{
-    box-sizing: border-box;
-    grid-gap: 24px;
-    display: grid;
-    grid-template-columns: repeat(3,[col-start] 1fr);
-}
 .box{
     display: grid;
     border: 1px solid #d1d1d1;
 }
-
 .line{
 background-color: #eee;
 margin-left: 5%;
