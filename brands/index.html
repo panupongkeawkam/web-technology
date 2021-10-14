@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <title>Brands</title>
+    <title>Upsplash for Brands</title>
     <link rel="shortcut icon" href="../icon/unsplash-logo.svg"> <!-- icon ตรง tab browser -->
 </head>
 <style>
@@ -81,6 +81,22 @@
         margin:auto;
         width: 1320px;
         height: 1320px;
+    }
+    .animation-up{
+        animation: up-down 2s linear infinite alternate;
+    }
+    
+    .animation-down{
+        animation: down-up 2s linear infinite alternate;
+    }
+    @keyframes up-down {
+        from{transform: translateY(1%);}
+        to{transform: translateY(-1%);}
+    }
+    
+    @keyframes down-up {
+        from{transform: translateY(-1%);}
+        to{transform: translateY(1%);}
     }
 </style>
 
@@ -188,9 +204,28 @@
         </div>
         <!-- รูปหมุนๆ -->
         <div class="row mt-5 pt-5">
-            <div class="container-animation position-relative bg-primary">
+            <div class="container-animation position-relative">
                 <img class="position-absolute" style="width: 100%;" src="icon/background.svg">
-                <img src="image/small_04.png" class="position-absolute p-0 m-0" style="top:calc(50% - 90px);left:calc(50% - 90px);width:180px">
+                <img src="image/pop_13.png" class="position-absolute p-0 m-0" style="top:calc(43% - 90px);left:calc(38% - 90px);width:480px">
+                <img src="image/pop_02.png" class="position-absolute p-0 m-0 animation-up" style="top:calc(67% - 90px);left:calc(67% - 90px);width:220px;z-index:1;">
+                <img src="image/pop_08.png" class="position-absolute p-0 m-0 animation-down" style="top:calc(42% - 90px);left:calc(80% - 90px);width:230px;">
+                <img src="image/small_07.png" class="position-absolute p-0 m-0 animation-up" style="top:calc(54% - 90px);left:calc(100% - 90px);width:130px;">
+                <img src="image/pop_10.png" class="position-absolute p-0 m-0 animation-down" style="top:calc(70% - 90px);left:90%;width:230px;">
+                <img src="image/pop_06.png" class="position-absolute p-0 m-0 animation-up" style="top:calc(83% - 90px);left:calc(74% - 90px);width:240px;">
+                <img src="image/pop_12.png" class="position-absolute p-0 m-0 animation-down" style="top:calc(86% - 95px);left:calc(50% - 90px);width:225px;">
+                <img src="image/small_06.png" class="position-absolute p-0 m-0 animation-up" style="top:93%;left:calc(35% - 90px);width:130px;">
+                <img src="image/small_01.png" class="position-absolute p-0 m-0 animation-down" style="top:88%;left:calc(12% - 90px);width:130px;">
+                <img src="image/pop_05.png" class="position-absolute p-0 m-0 animation-up" style="top:66%;left:calc(22% - 90px);width:240px;">
+                <img src="image/pop_11.png" class="position-absolute p-0 m-0 animation-down" style="top:57%;left:calc(0% - 90px);width:240px;">
+                <img src="image/pop_03.png" class="position-absolute p-0 m-0 animation-up" style="top:37%;left:calc(15% - 90px);width:225px;">
+                <img src="image/small_05.png" class="position-absolute p-0 m-0 animation-down" style="top:25%;left:calc(28% - 90px);width:130px;">
+                <img src="image/pop_09.png" class="position-absolute p-0 m-0 animation-up" style="top:19%;left:calc(5% - 90px);width:225px;">
+                <img src="image/small_04.png" class="position-absolute p-0 m-0 animation-down" style="top:5%;left:calc(22% - 90px);width:130px;">
+                <img src="image/pop_07.png" class="position-absolute p-0 m-0 animation-up" style="top:9%;left:calc(35% - 90px);width:240px;">
+                <img src="image/small_03.png" class="position-absolute p-0 m-0 animation-down" style="top:0.2%;left:calc(58% - 90px);width:130px;">
+                <img src="image/pop_14.png" class="position-absolute p-0 m-0 animation-up" style="top:14%;left:calc(65% - 90px);width:235px;">
+                <img src="image/small_02.png" class="position-absolute p-0 m-0 animation-down" style="top:4%;left:calc(81% - 90px);width:140px;">
+                <img src="image/pop_04.png" class="position-absolute p-0 m-0 animation-up" style="top:16%;left:calc(90% - 90px);width:240px;">
             </div>
         </div>
         <div class="row justify-content-center" style="margin-top: 6%">

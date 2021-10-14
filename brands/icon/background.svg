@@ -5,7 +5,6 @@
   <circle cx="600" cy="600" r="599.5" fill="none" stroke="#767676" stroke-linecap="round" stroke-dasharray="2,10"/>
   <style>
         svg{
-            position: absolute;
             animation: spin 120s linear infinite;
         }
         @keyframes spin{
