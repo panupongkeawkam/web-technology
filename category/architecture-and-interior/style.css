@@ -9,3 +9,17 @@ margin-right: 2%;
 width: 93%;
 height: 1px;
 }
+.circle{
+    background-color: #3cb46e;
+    border-radius: 100%;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin-right: 6px;
+}
+.p{
+    background-color: #c2ebd3;
+    height: 40%;
+    width: 15%;
+    border-radius: 5px;
+}
