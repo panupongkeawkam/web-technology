@@ -24,8 +24,7 @@
 
 <body>
     <!-- container สำหรับเพจบาร์ด้านบนสุดและเพจบาร์ตรง category รูป  -->
-    <!-- ยังไม่สมบูรณ์ -->
-    <div class="container-fluid shadow-sm position-sticky top-0" style="z-index: 1">
+    <div class="container-fluid shadow-sm position-sticky top-0" style="z-index: 2">
 
         <!-- เพจบาร์ด้านบนสุด -->
         <div class="row bg-white">
@@ -43,8 +42,8 @@
                 </a>
 
                 <!-- container สำหรับครอบ search-box และ drop-down -->
-                <div class="mx-3 position-relative" style="width: 100%;">
-                    <!-- ช่องการค้นหา -->
+                <div class="mx-3 position-relative w-100">
+                    <!-- search-box -->
                     <div id="seachBox1" class="input-group rounded-pill py-1 search-box-container"
                         data-bs-toggle="dropdown" aria-expanded="true">
                         <span class="input-group-addon px-2 d-flex justify-content-center align-items-center">
@@ -60,8 +59,12 @@
                     </div>
 
                     <!-- drop-down ของ searchBox -->
+<<<<<<< HEAD
                     <ul class="dropdown-menu mt-1 p-3 shadow" aria-labelledby="seachBox1" style="width: 100%;">
                         <div class="col-10">
+=======
+                    <ul class="dropdown-menu mt-1 p-3 shadow w-100" aria-labelledby="seachBox1">
+>>>>>>> 034fe8bec804525626afeb334cbe2c09604b6b86
                         <li class="mb-4">
                             <label class="form-label" style="font-size: .92em;">Recent Searches · <a
                                     class="hyper-text-b">Clear</a></label>
@@ -69,7 +72,6 @@
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">icon</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">web services</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">reference</button>
-                                <!-- แก้ text -->
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">flower</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">wallpaper</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">tree</button>
@@ -86,7 +88,6 @@
                                 </button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                     <img src="icon/graph-up.svg" height="16px" class="me-2">flower
-                                    <!-- แก้ text -->
                                 </button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                     <img src="icon/graph-up.svg" height="16px" class="me-2">student house
@@ -100,9 +101,7 @@
                             <label class="form-label" style="font-size: .92em;">Trending Topic</label>
                             <form class="from form-inline">
                                 <div class="btn p-0 border rounded me-1 mb-1">
-                                    <img src="image/btn-architecture.jpg" height="36px"
-                                        class="rounded-start">
-                                    <!-- แก้รูป -->
+                                    <img src="image/btn-architecture.jpg" height="36px" class="rounded-start">
                                     <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Architecture & Interior</span>
                                 </div>
                                 <div class="btn p-0 border rounded me-1 mb-1">
@@ -112,7 +111,6 @@
                                 <div class="btn p-0 border rounded me-1 mb-1">
                                     <img src="image/btn-current-events.jpg" height="36px" class="rounded-start">
                                     <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Current Events</span>
-                                    <!-- แก้ text -->
                                 </div>
                                 <div class="btn p-0 border rounded me-1 mb-1">
                                     <img src="image/btn-experimental.jpg" height="36px" class="rounded-start">
@@ -130,7 +128,6 @@
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">shadyside</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">the sea</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">Tokyo</button>
-                                <!-- แก้ text -->
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">Gaming</button>
                                 <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">Vaccine</button>
                             </form>
@@ -138,7 +135,7 @@
                     </ul>
                 </div>
 
-                <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง (บางปุ่ม) -->
+                <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง -->
                 <a class="nav-link hyper-text-b" href="brands/">Brands</a>🏆
                 <a class="nav-link hyper-text-b text-nowrap ps-2" href="awards/">Unsplash Awards</a>
                 <div class="vertical-line mx-3"></div>
@@ -155,9 +152,9 @@
                 </a>
 
                 <!-- dropdown ของเมนูบาร์ขวาสุด -->
-                <div class="dropdown-menu me-3 p-0 dropdown-animation" aria-labelledby="listMenu"
+                <div class="dropdown-menu me-3 p-0 dropdown-animation bg-transparent border-0" aria-labelledby="listMenu"
                     style="right: 0; left: auto;">
-                    <div class="row p-4">
+                    <div class="row p-4 bg-light border-top border-start border-end rounded-top shadow">
                         <div class="col d-flex flex-row">
                             <div class="col-4 d-flex align-items-start justify-content-center">
                                 <img src="icon/company.svg">
@@ -202,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-4 py-3 border-top">
+                    <div class="row bg-light px-4 py-3 border rounded-bottom shadow">
                         <div class="col-8" style="font-size: .9em;">
                             <a class="hyper-text-b me-3">License</a>
                             <a class="hyper-text-b me-3">Privacy Policy</a>
@@ -261,7 +258,7 @@
 
 
                     <!-- container สำหรับครอบ search-box และ drop-down -->
-                    <div class="mb-3 position-relative" style="width: 100%;">
+                    <div class="mb-3 position-relative" style="width: 100%; z-index: 1;">
                         <!-- ช่องการค้นหา -->
                         <div id="seachBox2" class="input-group rounded py-2 search-box-container"
                             data-bs-toggle="dropdown" aria-expanded="true">
@@ -278,7 +275,7 @@
                         </div>
 
                         <!-- drop-down ของ searchBox -->
-                        <ul class="dropdown-menu mt-1 p-3 shadow" aria-labelledby="seachBox2" style="width: 100%;">
+                        <ul class="dropdown-menu mt-1 p-3 shadow w-100" aria-labelledby="seachBox1" style="z-index: 1;">
                             <li class="mb-4">
                                 <label class="form-label" style="font-size: .92em;">Recent Searches · <a
                                         class="hyper-text-b">Clear</a></label>
@@ -286,7 +283,6 @@
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">icon</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">web services</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">reference</button>
-                                    <!-- แก้ text -->
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">flower</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">wallpaper</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">tree</button>
@@ -303,7 +299,6 @@
                                     </button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                         <img src="icon/graph-up.svg" height="16px" class="me-2">flower
-                                        <!-- แก้ text -->
                                     </button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">
                                         <img src="icon/graph-up.svg" height="16px" class="me-2">student house
@@ -317,28 +312,25 @@
                                 <label class="form-label" style="font-size: .92em;">Trending Topic</label>
                                 <form class="from form-inline">
                                     <div class="btn p-0 border rounded me-1 mb-1">
-                                        <img src="category/architecture-and-interior/image/7.jpg" height="36px"
-                                            class="rounded-start">
-                                        <span class="btn px-3 py-1 mb-1 in-dropdown-btn">Architecture & Interior</span>
+                                        <img src="image/btn-architecture.jpg" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Architecture &
+                                            Interior</span>
                                     </div>
                                     <div class="btn p-0 border rounded me-1 mb-1">
-                                        <img src="category/fashion/image/7.jpg" height="36px" class="rounded-start">
-                                        <span class="btn px-3 py-1 mb-1 in-dropdown-btn">Fashion</span>
+                                        <img src="image/btn-fashion.jpg" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Fashion</span>
                                     </div>
                                     <div class="btn p-0 border rounded me-1 mb-1">
-                                        <img src="category/current-events/image/7.jpg" height="36px"
-                                            class="rounded-start">
-                                        <!-- แก้ text -->
-                                        <span class="btn px-3 py-1 mb-1 in-dropdown-btn">Current Events</span>
+                                        <img src="image/btn-current-events.jpg" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Current Events</span>
                                     </div>
                                     <div class="btn p-0 border rounded me-1 mb-1">
-                                        <img src="category/experimental/image/7.jpg" height="36px"
-                                            class="rounded-start">
-                                        <span class="btn px-3 py-1 mb-1 in-dropdown-btn">Experimental</span>
+                                        <img src="image/btn-experimental.jpg" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Experimental</span>
                                     </div>
                                     <div class="btn p-0 border rounded me-1 mb-1">
-                                        <img src="image/10.jpg" height="36px" class="rounded-start">
-                                        <span class="btn px-3 py-1 mb-1 in-dropdown-btn">Film</span>
+                                        <img src="image/btn-film.jpg" height="36px" class="rounded-start">
+                                        <span class="btn px-3 py-1 me-1 mb-1 in-dropdown-btn">Film</span>
                                     </div>
                                 </form>
                             </li>
@@ -349,7 +341,6 @@
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">the sea</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">Tokyo</button>
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">Gaming</button>
-                                    <!-- แก้ text -->
                                     <button class="btn border px-3 py-2 me-1 mb-1 in-dropdown-btn">Vaccine</button>
                                 </form>
                             </li>
