@@ -103,13 +103,13 @@
     .dropdown-indent-shape {
         width: 20px;
         height: 20px;
-        background: white;
+        background: #f8f9fa;
         transform: rotateZ(45deg);
         position: absolute;
         right: 10px;
-        top: -11px;
-        border-top: 1px solid #dcdcdc;
-        border-left: 1px solid #dcdcdc;
+        top: -10px;
+        border-top: 1px solid #dce4e4;
+        border-left: 1px solid #dce4e4;
     }
 
     .dropdown-animation {
