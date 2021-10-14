@@ -10,9 +10,31 @@
         background-size: contain;
     }
 
-    .background-image {
+    .background-image-1 {
         height: var(--current-height);
         border-top: 1px solid #4c4c4c;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .background-image-2 {
+        background: #111;
+        border-top: 1px solid #4c4c4c;
+        background-size: auto 80%;
+        background-repeat: no-repeat;
+        background-position: 118% 50%;
+        background-image: url("../icon/leaves.svg");
+    }
+
+    .awards-icon-hover:hover {
+        opacity: .6;
+        cursor: pointer;
+        transition: .3;
+    }
+
+    .profile-hover:hover {
+        background: hsl(0, 0%, 20%, 20%);
+        cursor: pointer;
+        transition: .3s;
     }
