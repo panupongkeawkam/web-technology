@@ -23,8 +23,8 @@
         border-top: 1px solid #4c4c4c;
         background-size: auto 80%;
         background-repeat: no-repeat;
-        background-position: 118% 50%;
-        background-image: url("../icon/leaves.svg");
+        background-position: 120% 50%;
+        background-image: url("icon/leaves.svg");
     }
 
     .awards-icon-hover:hover {
