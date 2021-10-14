@@ -15,7 +15,7 @@ function writePhotoGallery(json) {
     jsonData = json;
     var index = 0;
     var gallery = document.getElementById("gallery");
-    var columnClass = ["col p-0", "col px-4", "col p-0"];
+    var columnClass = ["col-xl-4 col-lg-12 col-md-12 col-sm-12 p-xl-0 p-lg-0 p-md-0 px-sm-3", "col-xl-4 col-lg-12 col-md-12 col-sm-12 px-xl-4 p-lg-0 p-md-0 px-sm-3", "col-xl-4 col-lg-6 col-md-12 col-sm-12 p-lg-0 p-lg-0 p-md-0 px-sm-3"];
     for (var i = 0; i < 3; i++) {
         gallery.innerHTML += `<div id="column${i}" class="${columnClass[i]}">`;
         for (var j = 0; j < 6; j++) {
