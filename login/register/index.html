@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    .image-background {
+        height: 100%;
+        background-image: url('background/stones.jfif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+<body>
+    <div class="container-fluid p-0 d-flex">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 image-background d-flex flex-column p-5 text-light justify-content-between">
+                <div class="row p-4">
+                    <span>
+                        <img src="icon/unsplash-logo.svg" height="50px">
+                    </span>
+                </div>
+                <div class="row p-3">
+                    <h1 class="display-4 fw-bold">Creation starts here</h1>
+                    <h4 class="pt-3">Access 3,263,168 free, high-resolution photos you can’t find anywhere else</h4>
+                </div>
+                <div class="row ps-4">
+                    <p>Uploaded almost 8 years ago by Matthew Skinner</p>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 justify-content-center p-5">
+                <div class="row pt-5">
+                    <h1 class="display-4 fw-bold text-center">Join Unsplash</h1>
+                </div>
+                <div class="row p-2">
+                    <p class="text-center">Already have an account? <ins class="text-muted">Login</ins></p>
+                </div>
+                <div class="form p-5">
+                    <form class="d-flex flex-column align-items-center">
+                        <div class="d-grid col-10">
+                            <button
+                                class="btn btn-primary p-2 btn-inline d-flex justify-content-center align-items-center">
+                                <img class="me-2" src="icon/facebook.svg" height="20px">Join using Facebook</button>
+                        </div>
+                        <p class="text-center pt-4">OR</p>
+                        <div class="col-10 d-flex">
+                            <div class="col-6 pe-2">
+                                <label class="form-label">First name</label>
+                                <input type="text" class="form-control border-1 border-secondary">
+                            </div>
+                            <div class="col-6 ps-3">
+                                <label class="form-label">Last name</label>
+                                <input type="text" class="form-control border-1 border-secondary">
+                            </div>
+                        </div>
+                        <div class="col-10 pt-4">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control border-1 border-secondary">
+                        </div>
+                        <div class="col-10 pt-4">
+                            <label class="form-label">Username <span class="text-muted">(only letters, numbers, and
+                                    underscores)</span></label>
+                            <input type="email" class="form-control border-1 border-secondary">
+                        </div>
+                        <div class="col-10 pt-4">
+                            <label class="form-label">Password <span class="text-muted">(min. 6 char)</span></label>
+                            <input type="number" class="form-control border-1 border-secondary">
+                        </div>
+                        <div class="d-grid col-10 pt-4">
+                            <button
+                                class="btn btn-dark p-2 btn-inline d-flex justify-content-center align-items-center">Join</button>
+                        </div>
+                        <span style="font-size:14px" class="text-muted pt-4">By joining, you agree to the
+                            <ins>Terms</ins> and <ins>Privacy Policy.</ins></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementsByClassName("container-fluid")[0].style.height = window.innerHeight + "px";
+    var x = window.onresize = function () {
+        document.getElementsByClassName("container-fluid")[0].style.height = window.innerHeight + "px";
+    }
+</script>
+
+</html>
