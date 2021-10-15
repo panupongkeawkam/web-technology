@@ -1,7 +1,8 @@
 # Unsplash - Web Technology
 Repository นี้เกี่ยวกับรายวิชา Web Technology ของคณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ (IT) สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (KMITL)
 
-โดยโครงงานจัดทำขึ้นเพื่อศึกษาเทคโนโลยีทางของเว็บ โดยเว็บต้นแบบที่เลือกคือ [unsplash.com](https://unsplash.com/) และเราได้พัฒนาเว็บของเราขึ้นมา (สามารถดูได้ที่ [unsplash-web-technology.netlify.app](https://unsplash-web-technology.netlify.app/))
+โดยโครงงานจัดทำขึ้นเพื่อศึกษาเทคโนโลยีทางของเว็บ โดยเว็บต้นแบบที่เลือกคือ [unsplash.com](https://unsplash.com/) <br>
+และโครงงานที่เราได้พัฒนาขึ้นมาสามารถดูได้ที่ [unsplash-web-technology.netlify.app](https://unsplash-web-technology.netlify.app/)
 
 โดยเทคโนโลยีที่นำมาใช้และทีมพัฒนาของเรามีดังนี้
 <hr>
