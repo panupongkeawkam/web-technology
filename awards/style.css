@@ -4,10 +4,59 @@
 
     .frame-1 {
         height: 480px;
-        background-image: url("../icon/leaves.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+        animation: opacity-frame-1 12s ease-in;
+    }
+
+    .frame-2 {
+        animation: opacity-frame-2 12s ease-in;
+    }
+
+    .frame-3 {
+        animation: opacity-frame-3 12s ease-in;
+    }
+
+    .frame-4 {
+        animation: opacity-frame-4 12s ease-in;
+    }
+
+    .frame-5 {
+        width: 9%;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        animation: opacity-frame-5 12s ease-in, up-down 2800ms infinite alternate;
+    }
+
+    .frame-6 {
+        right: 10%;
+        top: 15%;
+        width: 10%;
+        position: absolute;
+        animation: opacity-frame-6 12s ease-in, up-down 2200ms infinite alternate;
+    }
+
+    .frame-7 {
+        left: 25%;
+        bottom: 10%;
+        width: 7%;
+        position: absolute;
+        animation: opacity-frame-7 12s ease-in, up-down 1900ms infinite alternate;
+    }
+
+    .frame-8 {
+        width: 7%;
+        top: 50%;
+        left: 5%;
+        position: absolute;
+        animation: opacity-frame-8 12s ease-in, up-down 2500ms infinite alternate;
+    }
+
+    .frame-9 {
+        width: 7%;
+        top: 15%;
+        left: 15%;
+        position: absolute;
+        animation: opacity-frame-9 12s ease-in, up-down 1800ms infinite alternate;
     }
 
     .background-image-1 {
