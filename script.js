@@ -54,8 +54,8 @@ function setSearchBGAndBorder(BGColour, borerColour, position) {
 function openDetail(photoIndex) {
     document.body.style.overflow = 'hidden';
     document.getElementById("photoDetail").innerHTML = `<img src="icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none';  document.body.style.overflow = 'auto'">
-                                                            <div class="d-flex pt-3 pb-5 justify-content-center photo-detail-container">
-                                                                <div id="detailContent" class="col-10 p-3 bg-white rounded">
+                                                            <div class="d-flex py-4 justify-content-center photo-detail-container" style="height: ${window.innerHeight}px">
+                                                                <div class="col-10 p-3 bg-white rounded">
 
                                                                     <div class="row pb-4">
                                                                         <div class="col d-flex justify-content-start">
@@ -84,7 +84,7 @@ function openDetail(photoIndex) {
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="row d-flex justify-content-center" style="height: 780px">
+                                                                    <div class="row d-flex justify-content-center" style="height: 80%;">
                                                                         <img src="image/${photoIndex}.jpg" height="100%" class="m-0 p-0" style="width: auto;">
                                                                     </div>
 
@@ -120,7 +120,7 @@ function openDetail(photoIndex) {
 
                                                                 </div>
                                                             </div>`;
-    document.getElementById("detailContent").style.transform = `scale(${screen.width / 1920})`;
-    document.getElementById("detailContent").style.transformOrigin = "top";
+    // document.getElementById("detailContent").style.transform = `scale(${screen.width / 1920})`;
+    // document.getElementById("detailContent").style.transformOrigin = "top";
     document.getElementById("photoDetail").style.display = "initial";
 }
