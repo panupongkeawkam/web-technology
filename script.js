@@ -58,8 +58,8 @@ var responseHeight = window.onresize = function () {
 function openDetail(photoIndex) {
     document.body.style.overflow = 'hidden';
     document.getElementById("photoDetail").innerHTML = `<img src="icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none';  document.body.style.overflow = 'auto'">
-                                                            <div id="detailContent" class="d-flex justify-content-center photo-detail-container" style="height: ${window.innerHeight}px; padding: 1% 0%">
-                                                                <div class="col-10 p-3 bg-white rounded">
+                                                            <div id="detailContent" class="d-flex justify-content-center photo-detail-container" style="height: ${window.innerHeight}px; padding-top: 1%">
+                                                                <div class="col-10 p-3 bg-white rounded-top text-nowrap">
 
                                                                     <div class="row pb-4">
                                                                         <div class="col d-flex justify-content-start">
@@ -88,7 +88,7 @@ function openDetail(photoIndex) {
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="row d-flex justify-content-center" style="height: 80%;">
+                                                                    <div class="row d-flex justify-content-center" style="height: 85%;">
                                                                         <img src="image/${photoIndex}.jpg" height="100%" class="m-0 p-0" style="width: auto;">
                                                                     </div>
 

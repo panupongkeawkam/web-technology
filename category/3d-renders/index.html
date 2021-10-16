@@ -33,8 +33,7 @@
                 <!-- ลิงค์หน้าหลักและโลโก้ unsplash -->
                 <a href="../../" class="d-flex pointer text-dark" style="height: 100%;">
                     <img src="../../icon/unsplash-logo.svg" height="100%">
-                    <div
-                        class="d-flex flex-column p-xl-1 justify-content-center d-xl-flex d-lg-none d-md-none d-sm-none">
+                    <div class="d-flex flex-column p-xl-1 justify-content-center d-none d-xl-flex">
                         <span style="line-height: 1.3em;"><b>Unsplash</b></span>
                         <span style="line-height: 1.3em; font-size: .8em;" class="text-nowrap">Photos for
                             everyone</span>
@@ -131,9 +130,9 @@
                 </div>
 
                 <!-- ปุ่ม/hypertext ที่ลิงค์ไปยังหน้าต่าง -->
-                <a class="nav-link hyper-text-b" href="../../brands/">Brands</a>🏆
-                <a class="nav-link hyper-text-b text-nowrap ps-2" href="../../awards/">Unsplash Awards</a>
-                <div class="vertical-line mx-3"></div>
+                <a class="nav-link hyper-text-b d-none d-xl-flex d-lg-flex d-md-none d-sm-none" href="../../brands/">Brands</a><span class="d-none d-xl-flex d-lg-flex d-md-none d-sm-none">🏆</span>
+                <a class="nav-link hyper-text-b text-nowrap ps-2 d-none d-xl-flex d-lg-flex d-md-none d-sm-none" href="../../awards/">Unsplash Awards</a>
+                <div class="vertical-line mx-0 mx-xl-3 mx-lg-3"></div>
                 <a class="nav-link hyper-text-b text-nowrap" href="../../login/">Log in</a>
                 <a class="nav-link hyper-text-b text-nowrap px-0" href="#">
                     <input class="btn border-secondary hyper-text-b custom-outline-btn" type="button"
@@ -147,8 +146,8 @@
                 </a>
 
                 <!-- dropdown ของเมนูบาร์ขวาสุด -->
-                <div class="dropdown-menu me-3 p-0 dropdown-animation bg-transparent border-0" aria-labelledby="listMenu"
-                    style="right: 0; left: auto;">
+                <div class="dropdown-menu me-3 p-0 dropdown-animation bg-transparent border-0"
+                    aria-labelledby="listMenu" style="right: 0; left: auto;">
                     <div class="row p-4 bg-light border-top border-start border-end rounded-top shadow">
                         <div class="col d-flex flex-row">
                             <div class="col-4 d-flex align-items-start justify-content-center">
@@ -157,7 +156,7 @@
                             <div class="col-8 pe-3 text-nowrap" style="font-size: .9em;">
                                 <span class="py-4"><b>Company</b></span>
                                 <li class="my-2"><a class="hyper-text-b">About</a></li>
-                                <li class="my-2"><a class="hyper-text-b">Brands</a></li>
+                                <li class="my-2"><a class="hyper-text-b" href="../../brands/">Brands</a></li>
                                 <li class="my-2"><a class="hyper-text-b">Blog</a></li>
                                 <li class="my-2"><a class="hyper-text-b">History</a></li>
                                 <li class="my-2"><a class="hyper-text-b">Join the team</a></li>
@@ -189,7 +188,7 @@
                                 <li class="my-2"><a class="hyper-text-b">Topics</a></li>
                                 <li class="my-2"><a class="hyper-text-b">Collections</a></li>
                                 <li class="my-2"><a class="hyper-text-b">Trends</a></li>
-                                <li class="my-2"><a class="hyper-text-b">Unsplash Awards</a></li>
+                                <li class="my-2"><a class="hyper-text-b" href="../../awards/">Unsplash Awards</a></li>
                                 <li class="my-2"><a class="hyper-text-b">Stats</a></li>
                             </div>
                         </div>
@@ -214,7 +213,7 @@
 
         <!-- เพจบาร์ตรง category รูป -->
         <div class="row bg-white">
-            <div class="navbar navbar-expand pb-0 overflow-auto">
+            <div class="navbar navbar-expand pb-0 overflow-auto text-nowrap">
                 <a href="../../" class="nav-link px-0 py-3 mx-3 underline-hover hyper-text-b">
                     Editorial</a>
                 <div class="vertical-line"></div>
@@ -251,7 +250,8 @@
                     designed in the software of your choice, rendered into JPEG images.</h2>
                 <br>
                 <h2 class="mb-3" style="font-size: 20px;display: inline-block;">Learn more</h2>
-                <h2 class="hyper-text-b mb-3" style="font-size: 20px;display: inline-block;text-decoration: underline;">here.
+                <h2 class="hyper-text-b mb-3" style="font-size: 20px;display: inline-block;text-decoration: underline;">
+                    here.
                 </h2>
             </div>
             <div class="col-xl-2 col-lg-0 col-md-0 col-sm-0"></div>
