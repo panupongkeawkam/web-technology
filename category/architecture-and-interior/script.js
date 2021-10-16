@@ -51,10 +51,14 @@ function setSearchBGAndBorder(BGColour, borerColour, position) {
     document.getElementsByClassName("search-box-container")[position].style.border = `1px solid ${borerColour}`;
 }
 
+var responseHeight = window.onresize = function () {
+    document.getElementById("detailContent").style.height = `${window.innerHeight}px`;
+}
+
 function openDetail(photoIndex) {
     document.body.style.overflow = 'hidden';
     document.getElementById("photoDetail").innerHTML = `<img src="../../icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none';  document.body.style.overflow = 'auto'">
-                                                            <div class="d-flex pt-3 justify-content-center photo-detail-container overflow-auto">
+                                                            <div id="detailContent" class="d-flex justify-content-center photo-detail-container" style="height: ${window.innerHeight}px; padding: 1% 0%">
                                                                 <div class="col-10 p-3 bg-white rounded">
 
                                                                     <div class="row pb-4">
@@ -84,8 +88,8 @@ function openDetail(photoIndex) {
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="row d-flex justify-content-center">
-                                                                        <img src="image/${photoIndex}.jpg" height="${screen.height * 0.73}px" class="m-0 p-0" style="width: auto;">
+                                                                    <div class="row d-flex justify-content-center" style="height: 80%;">
+                                                                        <img src="image/${photoIndex}.jpg" height="100%" class="m-0 p-0" style="width: auto;">
                                                                     </div>
 
                                                                     <div class="row py-4">
