@@ -1,0 +1,29 @@
+body {
+    overflow-x: hidden;
+}
+
+.image-background {
+    height: 100%;
+    background-image: url('background/stones.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#leftElement {
+    position: fixed;
+}
+
+#rightElement {
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 992px) {
+    #leftElement {
+        position: relative;
+    }
+    #rightElement {
+        position: relative;
+    }
+}

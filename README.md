@@ -8,13 +8,13 @@ Repository นี้เกี่ยวกับรายวิชา Web Technol
 <hr>
 
 ## เทคโนโลยีที่ใช้
-- HyperText Markup Language (HTML5)
+- HyperText Markup Language 5 (HTML5)
 - Cascading Style Sheets (CSS3)
 - Bootstrap 5 (CSS Framework)
 - JavaScript
 - JavaScript Object Notation (JSON)
-- Python 3
 - Scalable Vector Graphics (SVG)
+- Python 3
 - Git Bash
 <hr>
 
