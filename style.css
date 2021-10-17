@@ -84,6 +84,7 @@ button:not([disabled]):not(.disabled).focus, button:not([disabled]):not(.disable
 }
 
 .icon-thin {
+    transition: .3s;
     opacity: .5;
 }
 

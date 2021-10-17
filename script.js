@@ -59,6 +59,11 @@ function openDetail(photoIndex) {
     document.body.style.overflow = 'hidden';
     document.getElementById("photoDetail").innerHTML = `<img src="icon/cross.svg" height="24px" class="m-2 position-fixed icon-thin" onclick="photoDetail.style.display = 'none';  document.body.style.overflow = 'auto'">
                                                         <div id="detailContent" class="d-flex justify-content-center photo-detail-container" style="height: ${window.innerHeight}px; padding-top: 1%">
+                                        
+                                                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                                                <img src="icon/navigate-arrow.svg" height="32px" class="icon-thin">
+                                                            </div>
+                                        
                                                             <div class="col-10 p-3 bg-white rounded-top text-nowrap">
 
                                                                 <div class="row pb-4">
@@ -123,6 +128,11 @@ function openDetail(photoIndex) {
                                                                 </div>
 
                                                             </div>
+                                                                
+                                                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                                                <img src="icon/navigate-arrow.svg" height="32px" class="icon-thin" style="transform: scaleX(-1);">
+                                                            </div>
+                                                    
                                                         </div>`;
     document.getElementById("photoDetail").style.display = "initial";
 }
